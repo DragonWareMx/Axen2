@@ -20,43 +20,43 @@
         @yield('head')
     </head>
     <body>
-        {{-- NAVBAR --}}
-        <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
+        <header>
+            <!-- Main Navbar -->
+            <nav class="uk-container uk-navbar">
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a href="#">UIKit<strong>ResMenu</strong></a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                        <li class="uk-active">
+                            <a href={{route('nosotros')}}>Nosotros</a>
+                        </li>
+                        <li>
+                            <a href={{route('productos')}}>Productos</a>
+                        </li>
+                        <li>
+                            <a href={{route('contacto')}}>Contacto</a>
+                        </li>
+                        <li><a class="uk-text-large" href="https://shubhamjain.co/about/">about</a></li>
+                        <li><a class="uk-text-large" href="https://shubhamjain.co/">blog</a></li>
+                    </ul>
+                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                </div>
+            </nav>
+        </header>
 
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-        
-            </div>
-
-            <div class="uk-navbar-right">
-        
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active">
-                        <a href={{route('nosotros')}}>Nosotros</a>
-                    </li>
-                    <li>
-                        <a href={{route('productos')}}>Productos</a>
-                    </li>
-                    <li>
-                        <a href={{route('contacto')}}>Contacto</a>
-                    </li>
-                </ul>
-        
-            </div>
-        </nav>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li><a class="uk-text-large" href="https://shubhamjain.co/about/">about</a></li>
+                <li><a class="uk-text-large" href="https://shubhamjain.co/">blog</a></li>
+            </ul>
+        </div>
+    </div>
 
         @yield('body')
     </body>
