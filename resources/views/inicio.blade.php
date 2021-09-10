@@ -4,12 +4,7 @@
     Inicio
 @endsection
 
-@section('head')
-    {{-- CSS --}}
-    <link rel="stylesheet" href={{asset("/css/inicio.css")}}>
-@endsection
-
-@section('body')
+@section('header')
     {{-- parte blanca --}}
     <div class='ini_background' style='background-color:white;padding-top:100px;'>
         <div class='ini_content'>
