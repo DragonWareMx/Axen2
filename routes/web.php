@@ -32,3 +32,7 @@ Route::get('/productos', function () {
 Route::get('/contacto', function () {
     return view('Nosotros');
 })->name('contacto');
+
+Route::get('/mapa', function () {
+    return view('mapa');
+})->name('mapa');
