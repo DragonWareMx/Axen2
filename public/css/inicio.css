@@ -15,15 +15,18 @@
 
 .ini_button1{
     border-radius: 5px;
-    width: 150px;
-    height: 35px;
+    width: 201px;
+    height: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color:#250d4b;
-    border: 2px solid orange;
+    color:#2E3E58;
+    border: 2px solid #ED8F21;
     margin-top:15px;
+    font-family:poppins;
+    font-weight: Regular;
+    font-size: 22;
 }
 
 .ini_button2{
@@ -35,14 +38,14 @@
     justify-content: center;
     text-decoration: none;
     color:white;
-    border: 1px solid #250d4b;
-    background-color: #250d4b;
+    border: 1px solid #2E3E58;
+    background-color: #2E3E58;
     margin-top:15px;
 }
 
 .ini_button1:hover{
     text-decoration: none;
-    color:#250d4b;
+    color:#2E3E58;
 }
 
 .ini_button2:hover{
