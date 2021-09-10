@@ -63,3 +63,8 @@
     top:580px;
     left:-240px;
 }
+.menoItem{
+    color: #454545 !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: capitalize !important;
+}
