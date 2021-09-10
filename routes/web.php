@@ -19,7 +19,16 @@ Route::get('/', function () {
 
 Route::get('/inicio', function () {
     return view('inicio');
-});
+})->name('inicio');
+
 Route::get('/nosotros', function () {
     return view('Nosotros');
-});
+})->name('nosotros');
+
+Route::get('/productos', function () {
+    return view('Nosotros');
+})->name('productos');
+
+Route::get('/contacto', function () {
+    return view('Nosotros');
+})->name('contacto');
