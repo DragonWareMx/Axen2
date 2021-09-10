@@ -57,3 +57,9 @@
 .uk-navbar-container{
     transition: background-color 0.5s ease;
 }
+
+.menoItem{
+    color: #454545 !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: capitalize !important;
+}
