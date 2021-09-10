@@ -53,3 +53,7 @@
 .ini_logo{
     width: 400px;
 }
+
+.uk-navbar-container{
+    transition: background-color 0.5s ease;
+}
