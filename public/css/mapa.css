@@ -1,0 +1,63 @@
+.mapa_background{
+    background-image: url(/img/back/rectangulo.png);
+    min-height: 100vh;
+    width:100vw;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+
+}
+
+.back-left{
+    position: absolute;
+    min-height: calc(100vh + 122px);
+    bottom: 0px;
+    width: 30vw;
+    left: 0px;
+}
+
+.back-left::before {
+    content: "";
+    background-image: url(/img/back/grupod.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.49;
+    z-index: 4;
+}
+
+.back-right{
+    position: absolute;
+    min-height: calc(100vh + 122px);
+    width: 30vw;
+    bottom: 0px;
+    right: 0px;
+}
+
+.back-right::before {
+    content: "";
+    background-image: url(/img/back/grupoi.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.49;
+
+    z-index: 4;
+}
+
+.title-mapa{
+    font-family: Poppins;
+    font-size: 67px;
+    font-weight: 500;
+}
+
+.uk-padding-larger{
+    padding-top: 110px;
+}
