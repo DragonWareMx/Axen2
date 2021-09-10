@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+
+    {{-- CSS --}}
+    <link rel="stylesheet" href={{asset("/css/inicio.css")}}>
+    
+</head>
+<body>
+    {{-- parte blanca --}}
+    <div class='ini_background' style='background:no-repeat center url("/img/back/inicio1.jpg");background-size:cover;padding-top:100px;'>
+        <div class='ini_content'>
+            <div style='color:#250d4b;font-size:80px;font-weight:bold;line-height:1;' class='uk-width-1-1'>Que tu dinero</div>
+            <div style='color:#250d4b;font-size:40px;font-weight:bold;margin-top:0px;' class='uk-width-1-1'>Trabaje mientras descansas</div>
+            <a class='ini_button1'>Más</a>
+        </div>
+    </div>
+
+    {{-- parte azul --}}
+    <div class='ini_background' style='background:no-repeat center url("/img/back/inicio2.jpg");background-size:cover;'>
+        <div class='ini_content'>
+            <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo'>
+            <div style='color:white;font-size:57px;font-weight:bold;line-height:1;' class='uk-width-1-1'>Sobre nosotros</div>
+            <div style='color:white;font-size:18px;margin-top:10px;' class='uk-width-2-3'>Somos una Empresa Internacional de Tecnología Financiera con productos y servicios especializados.</div>
+            <a class='ini_button2'>Texto</a>
+        </div>
+    </div>
+    
+</body>
+</html>
