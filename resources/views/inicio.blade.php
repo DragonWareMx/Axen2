@@ -11,10 +11,11 @@
 
 @section('body')
     {{-- parte blanca --}}
-    <div class='ini_background' style='background:no-repeat center url("/img/back/inicio1.jpg");background-size:cover;padding-top:100px;'>
+    <div class='ini_background' style='background-color:white;padding-top:100px;'>
         <div class='ini_content'>
-            <div style='color:#250d4b;font-size:80px;font-weight:bold;line-height:1;' class='uk-width-1-1'>Que tu dinero</div>
-            <div style='color:#250d4b;font-size:40px;font-weight:bold;margin-top:0px;' class='uk-width-1-1'>Trabaje mientras descansas</div>
+            {{-- <img src={{asset('/img/inicio/poli1.svg')}} style='position: absolute; left:-192px; top:400 '> --}}
+            <div style='color:#2E3E58;font-size:100px;font-weight:bold;line-height:1;font-family:poppins;' class='uk-width-1-1'>Que tu dinero</div>
+            <div style='color:#2E3E58;font-size:46px;font-weight:medium;margin-top:0px;' class='uk-width-1-1'>Trabaje mientras descansas</div>
             <a class='ini_button1'>Más</a>
         </div>
     </div>
