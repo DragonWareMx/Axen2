@@ -62,7 +62,6 @@ Axen - Inicio
         <a class='ini_button1'>Más</a>
     </div>
 </div>
-</div>
 
 {{-- parte azul --}}
 <div class='ini_background' style='background-color:#2E3E58;z-index:20;'>
@@ -77,8 +76,6 @@ Axen - Inicio
         <a class='ini_button2'>Texto</a>
     </div>
     <img src={{asset('/img/inicio/graph3.png')}} class='ini_graph3'>
-</div>
-<img src={{asset('/img/inicio/graph3.png')}} class='ini_graph3'>
 </div>
 
 

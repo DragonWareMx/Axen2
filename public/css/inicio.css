@@ -13,6 +13,7 @@ html, body {
 .ini_background{
     width: 100%;
     position:relative;
+    min-height: 50vh;
 }
 
 .ini_content{
@@ -225,7 +226,7 @@ html, body {
         right:-600px;
         animation-duration: 12s;
     }
-    
+
     @keyframes poli4 {
         0%   {top:-100px;}
         50%  {top:-130px}
@@ -237,7 +238,7 @@ html, body {
     .ini_title1{
         font-size:60px;
     }
-    
+
     .ini_subtitle1{
         font-size:26px;
     }
@@ -254,21 +255,21 @@ html, body {
         top:100px;
         left:-190px;
     }
-    
+
     .ini_poli2{
         top:255px;
         left:60%;
     }
-      
+
     .ini_poli3{
         top:195px;
         left:82%;
     }
-    
+
     .ini_poli4{
         display: none;
     }
-    
+
     .ini_poli5{
         display: none;
     }
@@ -278,7 +279,7 @@ html, body {
     .ini_title2{
         font-size:50px;
     }
-    
+
     .ini_subtitle2{
         font-size:15px;
         width: 60%;
@@ -298,7 +299,7 @@ html, body {
     .ini_title1{
         font-size:25px;
     }
-    
+
     .ini_subtitle1{
         font-size:18px;
     }
@@ -311,7 +312,7 @@ html, body {
         top:200px;
         left:30%;
     }
-      
+
     .ini_poli3{
         top:195px;
         left:82%;
@@ -320,7 +321,7 @@ html, body {
     .ini_title2{
         font-size:25px;
     }
-    
+
     .ini_subtitle2{
         font-size:16px;
         width: 90%;
