@@ -27,16 +27,18 @@ Inicio
 			'YUC', 'ZAC'
 		];
 		/* State Names */
-		var state_names = ['Aguascalientes', 'Baja California Norte', 'Baja California Sur', 'Campeche', 'Chihuahua', 'Chiapas', 'Coahuila', 'Colima', 'Distrito Federal', 'Durango', 'Guerrero', 'Guanajuato', 'Hidalgo', 'Jalisco', 'Edo. Mexico', 'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca', 'Puebla', 'Queretaro', 'Quintana Roo', 'Sinaloa', 'San Luis Potosí', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas'];
+		var state_names = ['Aguascalientes', 'Baja California Norte', 'Baja California Sur', 'Campeche', 'Chihuahua', 'Chiapas', 'Coahuila', 'Colima', 'CDMX', 'Durango', 'Guerrero', 'Guanajuato', 'Hidalgo', 'Jalisco', 'Edo. Mexico', 'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca', 'Puebla', 'Queretaro', 'Quintana Roo', 'Sinaloa', 'San Luis Potosí', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas'];
+        var contacto = ['Mail: contacto@axen.com']
+        var tel = ['T: 4431XXXXXX']
 		$(function () {
-			$('.map').maphilight({ fade: false });
+			$('.map').maphilight({ fade: true });
 		});
 		$(document).ready(function () {
 			$('.area').hover(function () {
 				var id = $(this).attr('id');
 				var state = $.inArray(id, states);
 
-				$('#edo').html(state_names[state]);
+				$('#edo').html(state_names[state] + '<br><br>' + contacto[0] + '<br>' + tel[0]);
 			});
 		});
 </script>
@@ -77,5 +79,5 @@ Inicio
 @endsection
 
 @section('body')
-{{-- @include('mapa') --}}
+@include('mapa')
 @endsection
