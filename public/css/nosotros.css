@@ -1,0 +1,49 @@
+body{
+    background-color: #2E3E58;
+}
+.title-view{
+    font-size: 67px;
+    font-weight: 500;
+    line-height:70px;
+    color:white;
+}
+.text-content{
+    font-size:20px;
+    color:white;
+}
+.img-nosotros{
+    width:100%;
+    max-width: 724px;
+    max-height: 790px;
+}
+/* @xl */
+@media(max-width:1600px){
+    .title-view{
+        font-size:57px;
+        line-height:60px;
+    }
+    .text-content{
+        font-size:16px;
+    }
+    .img-nosotros{
+        width:80%;
+    }
+}
+/* @l */
+@media(max-width:960px){
+    .title-view{
+        font-size:47px;
+        line-height:50px;
+    }
+    .img-nosotros{
+        width:70%;
+        margin-top:40px;
+    }
+}
+/* @m */
+@media(max-width:600px){
+    .title-view{
+        font-size:37px;
+        line-height:40px;
+    }
+}
