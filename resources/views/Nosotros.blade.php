@@ -19,7 +19,7 @@ Nosotros
     style="background-color:#2E3E58; margin-top:140px !important">
         <div class="uk-width-4-5@xl uk-margin-auto uk-margin-large-bottom uk-flex uk-flex-wrap uk-flex-middle">
             <div class="uk-width-1-2@m">
-                <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                     <div class="title-view uk-margin-small-bottom">¿Quienes somos?</div>
                     <div class="text-content">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
@@ -32,7 +32,7 @@ Nosotros
                     </div>
                 </div>
             </div>
-            <div class="uk-width-1-2@m uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-slide-bottom; target: .img-nosotros; delay: 400; repeat: true">
+            <div class="uk-width-1-2@m uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade; target: .img-nosotros; delay: 400; repeat: true">
                 <img src={{asset('/img/nosotros/img1.png')}} class="img-nosotros">
             </div>
         </div>
@@ -42,7 +42,7 @@ Nosotros
                 <img src={{asset('/img/nosotros/img2.png')}} class="img-nosotros">
             </div>
             <div class="uk-width-1-2@m">
-                <div class="uk-width-5-6@m uk-margin-auto">
+                <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                     <div class="title-view uk-margin-small-bottom">¿Qué hacemos?</div>
                     <div class="text-content uk-margin-large-bottom">
                     Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
