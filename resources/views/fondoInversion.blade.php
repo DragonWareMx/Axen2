@@ -19,7 +19,7 @@ Fondo de inversión
     <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top uk-padding-remove-bottom" 
     style="margin-top:140px !important">
         
-        <div class="uk-width-1-1 uk-padding-large uk-padding-small-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
+        <div class="uk-width-1-1 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
                 <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">FONDO DE INVERSIÓN</div>
                 
@@ -46,6 +46,10 @@ Fondo de inversión
                     parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
                     dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
                     quam mattis, fusce morbi lacinia integer aliquet aptent.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
+                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
+                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
+                    quam mattis, fusce morbi lacinia integer aliquet aptent.
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">
@@ -53,7 +57,6 @@ Fondo de inversión
             </div>
         </div>
     </div>
-    <img src={{asset('/img/nosotros/onda.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-
-
+    
+    <img src={{asset('/img/nosotros/onda5.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
 @endsection
