@@ -22,8 +22,8 @@ Fondo de inversión
                 <div class="uk-width-1-1 txt-title-product uk-margin-bottom">FONDO DE INVERSIÓN</div>
                 
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
-                    <div >
-                        <img src={{asset('/img/nosotros/recurso.png')}} class="img-icon-product">
+                    <div>
+                        <img src={{asset('/img/nosotros/recurso.svg')}} class="img-icon-product">
                     </div>
                     <div class="uk-width-expand@l txt-descrip-product">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
