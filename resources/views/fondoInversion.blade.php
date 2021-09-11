@@ -15,8 +15,10 @@ Fondo de inversión
 @endsection
 
 @section('header')
+    <img src={{asset('/img/nosotros/onda.png')}} class="img-onda">
     <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top" 
-    style="background-color:white; margin-top:140px !important">
+    style="margin-top:140px !important">
+        
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
                 <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">FONDO DE INVERSIÓN</div>
