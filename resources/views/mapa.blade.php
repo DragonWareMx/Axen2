@@ -1,12 +1,13 @@
 <div class='mapa_background'>
-    <div class="back-left" style="z-index: 4"></div>
-    <div class="back-right" style="z-index: 4"></div>
+    <div class="back-left" style="z-index: 4" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500">
+    </div>
+    <div class="back-right" style="z-index: 4" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 500">
+    </div>
     <div class="uk-container uk-container-xlarge uk-padding-larger" style="z-index: 5">
         <div class="title-mapa uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
             Encuentra tú sucursal más cercana</div>
         <div class="uk-grid-medium uk-margin-large-top" uk-grid>
-            <div class="uk-width-2-3@m uk-flex uk-flex-center uk-flex-wrap"
-                uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+            <div class="uk-width-2-3@m uk-flex uk-flex-center uk-flex-wrap">
 
                 <div class="map-container" style="">
                     <map name="mexico">
