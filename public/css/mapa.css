@@ -1,17 +1,16 @@
 .mapa_background{
     background-image: url(/img/back/rectangulo.png);
     min-height: 100vh;
-    width:100vw;
+    width: 100%;
     background-size: cover;
     position: relative;
 
     display: flex;
-
 }
 
 .back-left{
     position: absolute;
-    min-height: calc(100vh + 122px);
+    min-height: calc(100vh);
     bottom: 0px;
     width: 30vw;
     left: 0px;
@@ -32,7 +31,7 @@
 
 .back-right{
     position: absolute;
-    min-height: calc(100vh + 122px);
+    min-height: calc(100vh);
     width: 30vw;
     bottom: 0px;
     right: 0px;
@@ -49,15 +48,81 @@
     left: 0px;
     opacity: 0.49;
 
-    z-index: 4;
+    z-index: 3;
 }
 
 .title-mapa{
     font-family: Poppins;
-    font-size: 67px;
+    font-size: 3.6vw;
     font-weight: 500;
 }
 
 .uk-padding-larger{
     padding-top: 110px;
+}
+
+.card-email{
+    background-color: #2E3E58;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.text-contacto{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 42px;
+    color: white;
+}
+
+.taC{
+    height: 72px;
+    border-radius: 15px;
+    resize: none;
+    outline: none;
+    font-family: Poppins;
+    width: 80%;
+}
+
+.label-txta{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    width: 80%;
+    text-align: left;
+    color: white;
+    margin: 0px 5px;
+}
+
+.btn-contacto{
+    height: 52px;
+    width: 80%;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+
+    background-color: transparent;
+    border-radius: 15px;
+    border: solid #ED8F21 3px;
+}
+
+.politicas-txt{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.check-or{
+    margin-right: 5px;
+    margin-top: -0.5px;
+}
+
+.check-or:checked{
+    background-color: #ED8F21 !important;
+}
+
+.check-or:focus{
+    border-color: #ED8F21 !important;
 }
