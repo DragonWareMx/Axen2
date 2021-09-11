@@ -15,8 +15,8 @@ Nosotros
 @endsection
 
 @section('header')
-    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-margin-xlarge-top uk-padding uk-padding-remove-top" 
-    style="background-color:#2E3E58">
+    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top" 
+    style="background-color:#2E3E58; margin-top:140px !important">
         <div class="uk-width-4-5@xl uk-margin-auto uk-margin-large-bottom uk-flex uk-flex-wrap uk-flex-middle">
             <div class="uk-width-1-2@m uk-padding uk-padding-remove">
                 <div class="uk-width-5-6@m uk-margin-auto">
