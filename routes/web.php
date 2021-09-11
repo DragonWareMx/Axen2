@@ -26,7 +26,7 @@ Route::get('/nosotros', function () {
 })->name('nosotros');
 
 Route::get('/productos', function () {
-    return view('Nosotros');
+    return view('nosotros');
 })->name('productos');
 
 Route::get('/contacto', function () {
@@ -36,3 +36,7 @@ Route::get('/contacto', function () {
 Route::get('/mapa', function () {
     return view('mapa');
 })->name('mapa');
+
+Route::get('/fondo-inversion', function () {
+    return view('fondoInversion');
+})->name('fondoInversion');
