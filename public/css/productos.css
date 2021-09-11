@@ -9,6 +9,14 @@
     left:750px;
     z-index: -1;
 }
+.img-onda-abajo{
+    position:absolute;
+    width:65%;
+    max-height:110px;
+    object-fit: cover;
+    top:804px;
+    left:-295px;
+}
 @media(min-width:2350px){
     .img-onda{
         top:-135px;
