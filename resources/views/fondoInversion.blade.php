@@ -19,10 +19,10 @@ Fondo de inversión
     style="background-color:white; margin-top:140px !important">
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
-                <div class="uk-width-1-1 txt-title-product uk-margin-bottom">FONDO DE INVERSIÓN</div>
+                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">FONDO DE INVERSIÓN</div>
                 
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
-                    <div>
+                    <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <img src={{asset('/img/nosotros/recurso.svg')}} class="img-icon-product">
                     </div>
                     <div class="uk-width-expand@l txt-descrip-product">
@@ -46,7 +46,7 @@ Fondo de inversión
                     quam mattis, fusce morbi lacinia integer aliquet aptent.
                 </div>
             </div>
-            <div class="uk-width-1-2@m">
+            <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">
                 <img src={{asset('/img/nosotros/img3.png')}} class="img-producto">
             </div>
         </div>
