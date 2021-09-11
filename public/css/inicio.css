@@ -5,13 +5,20 @@ html {
     box-sizing: inherit;
   }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .ini_background{
     width: 100%;
+    position:relative;
 }
 
 .ini_content{
     padding-top: 250px;
     padding-bottom: 390px;
+    width: 100%;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; */
@@ -31,6 +38,7 @@ html {
     font-family:poppins;
     font-weight: Regular;
     font-size: 22;
+    z-index:15;
 }
 
 .ini_button2{
@@ -45,6 +53,7 @@ html {
     border: 1px solid #2E3E58;
     background-color: #2E3E58;
     margin-top:15px;
+    z-index:15;
 }
 
 .ini_button1:hover{
@@ -59,6 +68,7 @@ html {
 
 .ini_logo{
     width: 400px;
+    z-index:15;
 }
 
 .uk-navbar-container{
@@ -69,9 +79,40 @@ html {
     position: absolute;
     top:580px;
     left:-240px;
+    z-index:10;
 }
+
+.ini_poli2{
+    position: absolute;
+    top:600px;
+    left:0px;
+    z-index:10;
+}
+
+.ini_poli3{
+    position: absolute;
+    top:825px;
+    left:225px;
+    z-index:10;
+}
+
+.ini_poli4{
+    position: absolute;
+    top:50px;
+    right:-300px;
+    z-index:5;
+}
+
+.ini_graph1{
+    position: absolute;
+    top:200px;
+    right:15px;
+    z-index:10;
+}
+
 .menoItem{
     color: #454545 !important;
     font-family: 'Poppins', sans-serif !important;
     text-transform: capitalize !important;
+    font-size: 24px !important;
 }

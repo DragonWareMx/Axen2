@@ -47,12 +47,18 @@ Inicio
 <div class='ini_background' style='background-color:white;padding-top:100px;'>
     <div class='ini_content uk-container uk-container-large'>
         <img src={{asset('/img/inicio/poli1.svg')}} class='ini_poli1'>
+        <img src={{asset('/img/inicio/poli2.svg')}} class='ini_poli2'>
+        <img src={{asset('/img/inicio/poli3.svg')}} class='ini_poli3'>
+        <img src={{asset('/img/inicio/poli4.svg')}} class='ini_poli4'>
+        <img src={{asset('/img/inicio/graph1.svg')}} class='ini_graph1'>
+        <div class="back-right" style="z-index: 4"></div>
         <div style='color:#2E3E58;font-size:100px;font-weight:bold;line-height:1;font-family:poppins;'
             class='uk-width-1-1'>Que tu dinero</div>
         <div style='color:#2E3E58;font-size:46px;font-weight:medium;margin-top:0px;' class='uk-width-1-1'>Trabaje
             mientras descansas</div>
         <a class='ini_button1'>Más</a>
     </div>
+</div>
 </div>
 
 {{-- parte azul --}}
@@ -71,5 +77,5 @@ Inicio
 @endsection
 
 @section('body')
-@include('mapa')
+{{-- @include('mapa') --}}
 @endsection
