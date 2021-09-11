@@ -39,5 +39,6 @@ Inicio
 @endsection
 
 @section('body')
-@include('mapa')
+    @include('productos')
+    @include('mapa')
 @endsection
