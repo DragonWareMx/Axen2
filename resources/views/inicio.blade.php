@@ -55,8 +55,8 @@ Inicio
             <img src={{asset('/img/inicio/poli5.svg')}} class='ini_poli5'>
             <img src={{asset('/img/inicio/graph1.svg')}} class='ini_graph1'>
             <div class="back-right" style="z-index: 4"></div>
-            <div class='ini_title1 uk-width-1-1'>Que tu dinero</div>
-            <div class='ini_subtitle1 uk-width-1-1'>Trabaje mientras descansas</div>
+            <div class='ini_title1 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Que tu dinero</div>
+            <div class='ini_subtitle1 uk-width-1-1'  uk-scrollspy="cls: uk-animation-fade; delay: 200;repeat: true">Trabaje mientras descansas</div>
             <a class='ini_button1'>Más</a>
         </div>
     </div>
@@ -65,9 +65,9 @@ Inicio
     <div class='ini_background' style='background-color:#2E3E58;z-index:20;'>
     {{-- <div class='ini_background' style='background-color:#2E3E58;background:no-repeat center url("/img/back/inicio2.jpg");background-size:cover;z-index:20;'> --}}
         <div class='ini_content uk-container uk-container-large'>
-            <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo'>
-            <div class='ini_title2 uk-width-1-1'>Sobre nosotros</div>
-            <div class='ini_subtitle2'>Somos una Empresa Internacional de Tecnología Financiera con productos y servicios especializados.</div>
+            <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo' uk-scrollspy="cls: uk-animation-fade;repeat: true">
+            <div class='ini_title2 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-right; repeat: true">Sobre nosotros</div>
+            <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una Empresa Internacional de Tecnología Financiera con productos y servicios especializados.</div>
             <a class='ini_button2'>Texto</a>
         </div>
         <img src={{asset('/img/inicio/graph3.png')}} class='ini_graph3'>
