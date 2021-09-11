@@ -32,7 +32,7 @@
 </head>
 
 <body style="font-family: 'Poppins', sans-serif;">
-    {{-- Sticky navbar --}}
+    {{-- NAVBAR --}}
     <div class="uk-position-top" id="top">
         <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;" data-uk-sticky="animation: uk-animation-slide-top;
                                 sel-target: .uk-navbar-container;
@@ -65,6 +65,7 @@
         </nav>
     </div>
 
+    {{-- NAVBAR RESPONSIVO --}}
     <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
         <div class="uk-offcanvas-bar">
             <ul class="uk-nav">
@@ -81,58 +82,26 @@
         </div>
     </div>
 
+    {{-- HEADER --}}
     <header id="hero-header">
         <div class="uk-section-secondary">
             @yield('header')
         </div>
     </header>
 
+    {{-- CONTENIDO --}}
     @yield('body')
 
-    {{-- <header>
-            <!-- Main Navbar -->
-            <nav class="uk-container uk-navbar">
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active">
-                            <img src={{asset("/img/logos/axennegro.png")}} class="uk-margin-top uk-margin-bottom"
-    width="200" height="51"/>
-    </li>
-    </ul>
-    </div>
-    <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav uk-visible@s">
-            <li class="uk-active">
-                <a href={{route('nosotros')}}>Nosotros</a>
-            </li>
-            <li>
-                <a href={{route('productos')}}>Productos</a>
-            </li>
-            <li>
-                <a href={{route('contacto')}}>Contacto</a>
-            </li>
-        </ul>
-        <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
-    </div>
-    </nav>
-    </header>
-
-    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar">
-            <ul class="uk-nav">
-                <li class="uk-active">
-                    <a href={{route('nosotros')}}>Nosotros</a>
-                </li>
-                <li>
-                    <a href={{route('productos')}}>Productos</a>
-                </li>
-                <li>
-                    <a href={{route('contacto')}}>Contacto</a>
-                </li>
-            </ul>
+    {{-- FOOTER --}}
+    <footer id="page-footer" class="uk-margin-top" uk-sticky>
+        <div class="uk-section-default">
+            <div class="uk-section uk-light uk-background-cover" style="background-image: url({{asset('/img/productos/fondo.png')}})">
+                <div class="uk-container uk-padding-small">
+                    <p class="uk-text-small">copyright(c).</p>
+                </div>
+            </div>
         </div>
-    </div>
-    --}}
+    </footer>
 </body>
 
 </html>

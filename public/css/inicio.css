@@ -104,6 +104,53 @@ html, body {
     color:white;
 }
 
+.productos_button{
+    border-radius: 14px;
+
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color:white;
+
+    border: 1px solid #ED8F21;
+    background-color: #ED8F21;
+
+    margin-top:30px;
+
+    font-family: Poppins;
+    font-size: 18px;
+
+    z-index:15;
+}
+
+.productos_button:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.productos_titulos{
+    margin-top: 30px;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.productos_texto_res{
+    margin-top: 0px !important;
+}
+
+@media(max-width:1224px){
+    .productos_texto_res{
+        margin-top: 63.2px !important;
+    }
+}
+
 .ini_logo{
     width: 510px;
     z-index:15;
