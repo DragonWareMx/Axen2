@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\SendMailable;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +52,13 @@ Route::get('/broker-financiero', function () {
 Route::get('/inversion-inmobiliaria', function () {
     return view('inversionInmobiliaria');
 })->name('inversionInmobiliaria');
+
+Route::post('/sendMail', function (Request $request) {
+    $request->validate([
+        'nombre' => 'required|max:45',
+        'tel' => 'required|min:10|max:10|numeric',
+        'asunto' => 'required|max:255',
+    ]);
+    Mail::to('joseagustinsolorzano@gmail.com')->send(new SendMailable($request));
+    return redirect()->back();
+})->name('mail');
