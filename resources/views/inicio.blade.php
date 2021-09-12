@@ -59,13 +59,13 @@ Axen - Inicio
         </div>
         <div class='ini_subtitle1 uk-width-1-1' uk-scrollspy="cls: uk-animation-fade; delay: 200;repeat: true">trabaje
             mientras descansas</div>
-        <a class='ini_button1'>Más</a>
+        <a href='/inicio#sobre-nosotros' class='ini_button1'>Más</a>
     </div>
 </div>
 
 {{-- parte azul --}}
 {{-- <div class='ini_background' style='background-color:#2E3E58;z-index:20;'> --}}
-<div class='ini_background' style='background:no-repeat center url("/img/inicio/graph.gif");background-size:cover;z-index:20;'>
+<div id='sobre-nosotros' class='ini_background' style='background:no-repeat center url("/img/inicio/graph.gif");background-size:cover;z-index:20;'>
     <div class='ini_content uk-container uk-container-large'>
         <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo'
             uk-scrollspy="cls: uk-animation-fade;repeat: true">
@@ -73,7 +73,7 @@ Axen - Inicio
         </div>
         <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una empresa dedicada a compartir una nueva cultura financiera, 
             que da la oportunidad de generar riqueza</div>
-        <a class='ini_button2'>Conoce más</a>
+        <a href='/nosotros' class='ini_button2'>Conoce más</a>
     </div>
     {{-- <img src={{asset('/img/inicio/graph.gif')}} class='ini_graph3'> --}}
 </div>
