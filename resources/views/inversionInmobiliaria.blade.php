@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-Inversión Inmobiliaria
+Forex
 @endsection
 
 @section('head')
@@ -21,34 +21,22 @@ Inversión Inmobiliaria
         
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
-                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">INVERSIÓN INMOBILIARIA</div>
+                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">¿QUÉ ES FOREX?</div>
                 
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
                     <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                        <img src={{asset('/img/productos/recurso3.svg')}} class="img-icon-product">
+                        <img src={{asset('/img/productos/recurso2.svg')}} class="img-icon-product">
                     </div>
                     <div class="uk-width-expand@l txt-descrip-product">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                        parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                        dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                        quam mattis, fusce morbi lacinia integer aliquet aptent.
+                        Forex es una oportunidad para ti y para llegar a la libertad financiera
+                        que te permitirá dejar de preocuparte por el dinero y empezar a vivir tus sueños.
                     </div>
                 </div>
 
                 <div class="uk-width-1-1 txt-descrip-product">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
+                    Forex es el mercado financiero más grande de todo el mundo, en el cual se intercambian todas 
+                    las divisas. Los participantes del mercado compran y venden divisas a través de un bróker, 
+                    y pueden tener acceso a aproximadamente más de 5 trillones de dólares al día.
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">

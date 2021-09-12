@@ -57,7 +57,7 @@ Axen - Inicio
         <div class="back-right" style="z-index: 4"></div>
         <div class='ini_title1 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Que tu dinero
         </div>
-        <div class='ini_subtitle1 uk-width-1-1' uk-scrollspy="cls: uk-animation-fade; delay: 200;repeat: true">Trabaje
+        <div class='ini_subtitle1 uk-width-1-1' uk-scrollspy="cls: uk-animation-fade; delay: 200;repeat: true">trabaje
             mientras descansas</div>
         <a class='ini_button1'>Más</a>
     </div>
@@ -71,11 +71,11 @@ Axen - Inicio
             uk-scrollspy="cls: uk-animation-fade;repeat: true">
         <div class='ini_title2 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Sobre nosotros
         </div>
-        <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una
-            Empresa Internacional de Tecnología Financiera con productos y servicios especializados.</div>
-        <a class='ini_button2'>Texto</a>
+        <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una empresa dedicada a compartir una nueva cultura financiera, 
+            que da la oportunidad de generar riqueza</div>
+        <a class='ini_button2'>Conoce más</a>
     </div>
-    <img src={{asset('/img/inicio/graph3.png')}} class='ini_graph3'>
+    <img src={{asset('/img/inicio/graph.gif')}} class='ini_graph3'>
 </div>
 
 

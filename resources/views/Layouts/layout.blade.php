@@ -54,7 +54,7 @@
                         <a href={{route('nosotros')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos active @else menoItem @endif">Nosotros</a>
                     </li>
                     <li>
-                        <a href={{route('productos')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Productos</a>
+                        <a href={{route('productos')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
                     </li>
                     <li>
                         <a href={{route('contacto')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
@@ -74,7 +74,7 @@
                     <a href={{route('nosotros')}}>Nosotros</a>
                 </li>
                 <li>
-                    <a href={{route('productos')}}>Productos</a>
+                    <a href={{route('productos')}}>Temas</a>
                 </li>
                 <li>
                     <a href={{route('contacto')}}>Contacto</a>
@@ -104,7 +104,7 @@
                         {{-- MENU --}}
                         <div uk-flex uk-flex-column>
                             <a class='footer_menu @if(Route::current()->getName() == 'nosotros') footer_menu_active @endif' href={{route('nosotros')}}>Nosotros</a>
-                            <a class='footer_menu @if(Route::current()->getName() == 'productos') footer_menu_active @endif' href={{route('productos')}}>Productos</a>
+                            <a class='footer_menu @if(Route::current()->getName() == 'productos') footer_menu_active @endif' href={{route('productos')}}>Temas</a>
                             <a class='footer_menu @if(Route::current()->getName() == 'contacto') footer_menu_active @endif' href={{route('contacto')}}>Contacto</a>
                         </div>
                         {{-- PODEMOS AYUDARTE --}}

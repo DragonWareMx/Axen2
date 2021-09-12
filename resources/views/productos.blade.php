@@ -10,7 +10,7 @@
         
         <div class="uk-container uk-text-center">
 
-            <h3 style="font-size:67px; margin-top: 100px; margin-bottom:100px">Productos</h3>
+            <h3 style="font-size:67px; margin-top: 100px; margin-bottom:100px">Temas</h3>
 
             <div class="uk-grid-match uk-child-width-1-3@m uk-margin-xlarge-bottom" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom; delay: 200; repeat: true;">
                 <div>
@@ -18,13 +18,13 @@
                         
                         <img src="{{asset("/img/productos/Recurso 1.svg")}}" />
                         <h3 class="uk-card-title productos_titulos">
-                            FONDO DE INVERSIÓN
+                            ¿POR QUÉ INVERTIR?
                         </h3>
                         <p class="productos_texto_res">
-                            Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit,
+                            Cuando inviertes el dinero trabaja
+                            para ti
                         </p>
-                        <a class='productos_button'>Texto</a>
+                        <a class='productos_button'>Ve más</a>
                     </div>
                 </div>
                 <div uk-scrollspy-class="uk-animation-slide-top">
@@ -32,13 +32,12 @@
                         
                         <img src="{{asset("/img/productos/Recurso 2.svg")}}" />
                         <h3 class="uk-card-title productos_titulos">
-                            BROKER FINANCIERO INTERNACIONAL
+                            ¿QUÉ ES UN BRÓKER?
                         </h3>
                         <p style="margin-top: 0px">
-                            Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit,
+                            Un bróker acerca a las personas a los mercados financieros a nivel global
                         </p>
-                        <a class='productos_button'>Texto</a>
+                        <a class='productos_button'>Ve más</a>
                     </div>
                 </div>
                 <div>
@@ -46,13 +45,13 @@
                         
                         <img src="{{asset("/img/productos/Recurso 3.svg")}}" />
                         <h3 class="uk-card-title productos_titulos">
-                            INVERSIÓN INMOBILIARIA
+                            ¿QUÉ ES FOREX?
                         </h3>
                         <p class="productos_texto_res">
-                            Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit,
+                            Se trata del mercado financiero
+                            más grande de todo el mundo
                         </p>
-                        <a class='productos_button'>Texto</a>
+                        <a class='productos_button'>Ve más</a>
                     </div>
                 </div>
             </div>

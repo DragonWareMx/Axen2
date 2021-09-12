@@ -20,15 +20,13 @@ Nosotros
         <div class="uk-width-4-5@xl uk-margin-auto uk-margin-large-bottom uk-flex uk-flex-wrap uk-flex-middle">
             <div class="uk-width-1-2@m">
                 <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                    <div class="title-view uk-margin-small-bottom">¿Quienes somos?</div>
+                    <div class="title-view uk-margin-small-bottom">¿Quiénes somos?</div>
                     <div class="text-content">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                        parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                        dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                        quam mattis, fusce morbi lacinia integer aliquet aptent pharetra imperdiet cras augue, 
-                        nostra iaculis ante phasellus ut ac at himenaeos. Aptent luctus egestas non accumsan 
-                        justo arcu habitant convallis, pellentesque curae quisque ullamcorper curabitur urna 
-                        fermentum conubia eros, bibendum porttitor ad inceptos blandit nibh iaculis.
+                        Somos una empresa dedicada a compartir una nueva cultura financiera, 
+                        que da la oportunidad de generar riqueza. Fundada en 2017 para mejorar 
+                        la calidad de vida de las personas, trabajamos con pasión para lograr 
+                        nuestra visión: impactar positivamente el 1% de la población mundial y ayudarla
+                        a cumplir sus sueños.
                     </div>
                 </div>
             </div>
@@ -43,20 +41,29 @@ Nosotros
             </div>
             <div class="uk-width-1-2@m">
                 <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                    <div class="title-view uk-margin-small-bottom">¿Qué hacemos?</div>
+                    <div class="title-view uk-margin-small-bottom">Nuestros valores</div>
                     <div class="text-content uk-margin-large-bottom">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
+                        Servicio
+                        <br>
+                        Honestidad
+                        <br>
+                        Pasión
+                        <br>
+                        Responsabilidad
+                        <br>
+                        Calidad
+                        <br>
+                        Amor
+                        <br>
+                        Gratitud
                     </div>
 
-                    <div class="title-view uk-margin-small-bottom">¿Qué hacemos?</div>
+                    <div class="title-view uk-margin-small-bottom">Libertad financiera</div>
                     <div class="text-content">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
+                        La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte 
+                        nunca más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas 
+                        de generar ingresos, lo que te gestiona más tiempo para hacer lo que en realidad te gusta.
+                        “Disfruta de la vida, nosotros nos encargamos del resto”.
                     </div>
                 </div>
             </div>

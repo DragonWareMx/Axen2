@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-Broker Financiero Internacional
+Broker Financiero
 @endsection
 
 @section('head')
@@ -21,34 +21,21 @@ Broker Financiero Internacional
         
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
-                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">BROKER FINANCIERO INTERNACIONAL</div>
+                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">BROKER FINANCIERO</div>
                 
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
                     <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                        <img src={{asset('/img/productos/recurso2.svg')}} class="img-icon-product">
+                        <img src={{asset('/img/productos/recurso3.svg')}} class="img-icon-product">
                     </div>
                     <div class="uk-width-expand@l txt-descrip-product">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                        parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                        dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                        quam mattis, fusce morbi lacinia integer aliquet aptent.
+                        Cuando hablamos de un bróker nos referimos a un intermediario financiero, 
+                        persona o empresa que está autorizada para realizar operaciones en los mercados bursátiles
+                        a nombre de terceros.
                     </div>
                 </div>
 
                 <div class="uk-width-1-1 txt-descrip-product">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
-                    parturient ultrices lobortis etiam quam augue iaculis potenti, a odio libero vel metus 
-                    dis elementum vehicula rutrum. Hac sociosqu primis faucibus purus nisl senectus gravida 
-                    quam mattis, fusce morbi lacinia integer aliquet aptent.
+                    Un bróker acerca a las personas a los mercados financieros de todo el mundo.
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">

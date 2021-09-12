@@ -5,7 +5,7 @@
     </div>
     <div class="uk-container uk-container-xlarge uk-padding-larger" style="z-index: 5">
         <div class="title-mapa uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-            Encuentra tú sucursal más cercana</div>
+            ¿Te interesa aprender más?</div>
         <div class="uk-grid-medium uk-margin-large-top" uk-grid>
             <div class="uk-width-2-3@m uk-flex uk-flex-center uk-flex-wrap">
 
