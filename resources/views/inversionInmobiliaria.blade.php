@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-Fondo de inversión
+Inversión Inmobiliaria
 @endsection
 
 @section('head')
@@ -21,11 +21,11 @@ Fondo de inversión
         
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
-                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">FONDO DE INVERSIÓN</div>
+                <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">INVERSIÓN INMOBILIARIA</div>
                 
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
                     <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                        <img src={{asset('/img/productos/recurso.svg')}} class="img-icon-product">
+                        <img src={{asset('/img/productos/recurso3.svg')}} class="img-icon-product">
                     </div>
                     <div class="uk-width-expand@l txt-descrip-product">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit at ultricies nunc, dui venenatis 
@@ -52,7 +52,7 @@ Fondo de inversión
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">
-                <img src={{asset('/img/productos/img3.png')}} class="img-producto">
+                <img src={{asset('/img/productos/img5.jpg')}} class="img-producto" style="border-radius: 32px">
             </div>
         </div>
     </div>
