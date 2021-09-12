@@ -54,10 +54,10 @@
                         <a href={{route('nosotros')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos active @else menoItem @endif">Nosotros</a>
                     </li>
                     <li>
-                        <a href={{route('productos')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
+                        <a href="/inicio#temas" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
                     </li>
                     <li>
-                        <a href={{route('contacto')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
+                        <a href="/inicio#contacto" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
                     </li>
                 </ul>
                 <a href="#" class="uk-navbar-toggle uk-hidden@s menoItem" uk-navbar-toggle-icon
@@ -74,10 +74,10 @@
                     <a href={{route('nosotros')}}>Nosotros</a>
                 </li>
                 <li>
-                    <a href={{route('productos')}}>Temas</a>
+                    <a href="/inicio#temas">Temas</a>
                 </li>
                 <li>
-                    <a href={{route('contacto')}}>Contacto</a>
+                    <a href="/inicio#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -104,8 +104,8 @@
                         {{-- MENU --}}
                         <div uk-flex uk-flex-column>
                             <a class='footer_menu @if(Route::current()->getName() == 'nosotros') footer_menu_active @endif' href={{route('nosotros')}}>Nosotros</a>
-                            <a class='footer_menu @if(Route::current()->getName() == 'productos') footer_menu_active @endif' href={{route('productos')}}>Temas</a>
-                            <a class='footer_menu @if(Route::current()->getName() == 'contacto') footer_menu_active @endif' href={{route('contacto')}}>Contacto</a>
+                            <a class='footer_menu @if(Route::current()->getName() == 'productos') footer_menu_active @endif' href="/inicio#temas">Temas</a>
+                            <a class='footer_menu @if(Route::current()->getName() == 'contacto') footer_menu_active @endif' href="/inicio#contacto">Contacto</a>
                         </div>
                         {{-- PODEMOS AYUDARTE --}}
                         <div>

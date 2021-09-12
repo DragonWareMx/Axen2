@@ -1,4 +1,4 @@
-<div class='mapa_background'>
+<div id="contacto" class='mapa_background'>
     <div class="back-left" style="z-index: 4" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500">
     </div>
     <div class="back-right" style="z-index: 4" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 500">

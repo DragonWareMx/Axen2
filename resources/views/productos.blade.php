@@ -5,7 +5,7 @@
 </div>
 
 {{-- PRODUCTOS --}}
-<div class="uk-section-default">
+<div id="temas" class="uk-section-default">
     <div class="uk-section uk-light uk-background-cover" style="background-image: url({{asset('/img/productos/fondo.png')}})">
         
         <div class="uk-container uk-text-center">
@@ -24,7 +24,7 @@
                             Cuando inviertes el dinero trabaja
                             para ti
                         </p>
-                        <a class='productos_button'>Ve más</a>
+                        <a class='productos_button' href={{route('fondoInversion')}}>Ve más</a>
                     </div>
                 </div>
                 <div uk-scrollspy-class="uk-animation-slide-top">
@@ -37,7 +37,7 @@
                         <p style="margin-top: 0px">
                             Un bróker acerca a las personas a los mercados financieros a nivel global
                         </p>
-                        <a class='productos_button'>Ve más</a>
+                        <a class='productos_button' href={{route('brokerFinanciero')}}>Ve más</a>
                     </div>
                 </div>
                 <div>
@@ -51,7 +51,7 @@
                             Se trata del mercado financiero
                             más grande de todo el mundo
                         </p>
-                        <a class='productos_button'>Ve más</a>
+                        <a class='productos_button' href={{route('inversionInmobiliaria')}}>Ve más</a>
                     </div>
                 </div>
             </div>

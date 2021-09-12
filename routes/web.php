@@ -49,7 +49,7 @@ Route::get('/broker-financiero', function () {
     return view('brokerFinanciero');
 })->name('brokerFinanciero');
 
-Route::get('/inversion-inmobiliaria', function () {
+Route::get('/forex', function () {
     return view('inversionInmobiliaria');
 })->name('inversionInmobiliaria');
 
