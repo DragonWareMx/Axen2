@@ -64,8 +64,8 @@ Axen - Inicio
 </div>
 
 {{-- parte azul --}}
-<div class='ini_background' style='background-color:#2E3E58;z-index:20;'>
-    {{-- <div class='ini_background' style='background-color:#2E3E58;background:no-repeat center url("/img/back/inicio2.jpg");background-size:cover;z-index:20;'> --}}
+{{-- <div class='ini_background' style='background-color:#2E3E58;z-index:20;'> --}}
+<div class='ini_background' style='background:no-repeat center url("/img/inicio/graph.gif");background-size:cover;z-index:20;'>
     <div class='ini_content uk-container uk-container-large'>
         <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo'
             uk-scrollspy="cls: uk-animation-fade;repeat: true">
@@ -75,7 +75,7 @@ Axen - Inicio
             que da la oportunidad de generar riqueza</div>
         <a class='ini_button2'>Conoce más</a>
     </div>
-    <img src={{asset('/img/inicio/graph.gif')}} class='ini_graph3'>
+    {{-- <img src={{asset('/img/inicio/graph.gif')}} class='ini_graph3'> --}}
 </div>
 
 

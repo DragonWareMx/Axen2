@@ -80,7 +80,7 @@ html, body {
 .ini_button2{
     border-radius: 5px;
     width: 201px;
-    height: 51px;
+    min-height: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,9 +387,12 @@ html, body {
     }
     .ini_button2{
         width: 75px;
-        height: 16px;
+        min-height: 16px;
         margin-top:15px;
         font-size: 13px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
     .ini_logo{
         width: 150px;
