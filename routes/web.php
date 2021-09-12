@@ -40,3 +40,11 @@ Route::get('/mapa', function () {
 Route::get('/fondo-inversion', function () {
     return view('fondoInversion');
 })->name('fondoInversion');
+
+Route::get('/broker-financiero', function () {
+    return view('brokerFinanciero');
+})->name('brokerFinanciero');
+
+Route::get('/inversion-inmobiliaria', function () {
+    return view('inversionInmobiliaria');
+})->name('inversionInmobiliaria');

@@ -256,6 +256,18 @@ html, body {
     font-size: 24px !important;
 }
 
+.menoItemNos{
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: capitalize !important;
+    font-size: 24px !important;
+}
+
+.menoItemNos.active,
+.menoItem.active{
+    color: #0071C2 !important;
+}
+
 @media(max-width:1000px){
     .ini_graph1{
         top:200px;
@@ -382,4 +394,38 @@ html, body {
     .ini_logo{
         width: 150px;
     }
+}
+
+.footer_img{
+    max-width: 200px;
+    margin-bottom: 80px;
+}
+
+.footer_menu{
+    border-radius: 5px;
+    width: 201px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    margin-top:14px;
+    font-family: Poppins;
+    font-size: 22px;
+    z-index:15;
+}
+
+.footer_menu_active,
+.footer_menu:hover{
+    text-decoration: none;
+    color:white;
+    border: 1px solid #2E3E58;
+    background-color: #2E3E58;
+}
+
+.footer_icon{
+    border-radius: 50%;
+    border: 4px solid white;
+    padding: 25px;
 }

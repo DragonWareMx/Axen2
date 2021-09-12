@@ -69,7 +69,7 @@ Axen - Inicio
     <div class='ini_content uk-container uk-container-large'>
         <img src={{asset('/img/logos/axenblanco.png')}} class='ini_logo'
             uk-scrollspy="cls: uk-animation-fade;repeat: true">
-        <div class='ini_title2 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-right; repeat: true">Sobre nosotros
+        <div class='ini_title2 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Sobre nosotros
         </div>
         <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una
             Empresa Internacional de Tecnología Financiera con productos y servicios especializados.</div>
