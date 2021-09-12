@@ -44,3 +44,7 @@ Route::get('/fondo-inversion', function () {
 Route::get('/broker-financiero', function () {
     return view('brokerFinanciero');
 })->name('brokerFinanciero');
+
+Route::get('/inversion-inmobiliaria', function () {
+    return view('inversionInmobiliaria');
+})->name('inversionInmobiliaria');
