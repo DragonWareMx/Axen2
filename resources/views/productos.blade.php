@@ -12,7 +12,7 @@
 
             <h3 style="font-size:67px; margin-top: 100px; margin-bottom:100px">Productos</h3>
 
-            <div class="uk-grid-match uk-child-width-1-3@m uk-margin-xlarge-bottom" uk-grid>
+            <div class="uk-grid-match uk-child-width-1-3@m uk-margin-xlarge-bottom" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom; delay: 200; repeat: true;">
                 <div>
                     <div class="uk-card uk-card-default uk-card-body" style="border-radius: 49px; padding-bottom: 70px; padding-left: 20px; padding-right: 20px;">
                         
@@ -27,7 +27,7 @@
                         <a class='productos_button'>Texto</a>
                     </div>
                 </div>
-                <div>
+                <div uk-scrollspy-class="uk-animation-slide-top">
                     <div class="uk-card uk-card-default uk-card-body" style="border-radius: 49px; padding-bottom: 70px; padding-left: 20px; padding-right: 20px;">
                         
                         <img src="{{asset("/img/productos/Recurso 2.svg")}}" />
