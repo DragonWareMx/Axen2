@@ -87,27 +87,29 @@
             </div>
             <div class="uk-width-expand@m uk-flex uk-flex-center uk-flex-middle"
                 uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
-                <form action="/sendMail" method="post">
+                <form action="/sendMail" method="post" class="uk-flex uk-flex-center uk-flex-middle">
                     @csrf
-                <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
-                    <div class="text-contacto">Contacto</div>
-                    
+                    <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+                        <div class="text-contacto">Contacto</div>
+
                         <div class="label-txta">Nombre:</div>
                         <textarea class="uk-text-area uk-margin-small-bottom taC" name="nombre" id="nombre" cols="30"
                             rows="10" required></textarea>
                         <div class="label-txta">Teléfono:</div>
-                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="tel" id="" cols="30"
-                            rows="10" required></textarea>
+                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="tel" id="" cols="30" rows="10"
+                            required></textarea>
                         <div class="label-txta">Asunto:</div>
-                        <textarea class="uk-text-area uk-margin-bottom taC" name="asunto" id="" cols="30" rows="10" required></textarea>
+                        <textarea class="uk-text-area uk-margin-bottom taC" name="asunto" id="" cols="30" rows="10"
+                            required></textarea>
 
-                        <button type="submit" class="btn-contacto uk-margin-small-bottom" style="cursor:pointer">Enviar</button>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" style="width: 90%">
-                        {{-- <label class="politicas-txt"><input class="uk-checkbox check-or" type="checkbox">Acepto las
+                        <button type="submit" class="btn-contacto uk-margin-small-bottom"
+                            style="cursor:pointer">Enviar</button>
+                        <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" style="width: 90%">
+                            {{-- <label class="politicas-txt"><input class="uk-checkbox check-or" type="checkbox">Acepto las
                             Políticas de
                             Privacidad</label> --}}
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>
