@@ -101,7 +101,7 @@
                         <div class="label-txta">Asunto:</div>
                         <textarea class="uk-text-area uk-margin-bottom taC" name="asunto" id="" cols="30" rows="10" required></textarea>
 
-                        <button type="submit" class="btn-contacto uk-margin-small-bottom">Enviar</button>
+                        <button type="submit" class="btn-contacto uk-margin-small-bottom" style="cursor:pointer">Enviar</button>
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" style="width: 90%">
                         {{-- <label class="politicas-txt"><input class="uk-checkbox check-or" type="checkbox">Acepto las
                             Políticas de
