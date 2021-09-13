@@ -27,9 +27,21 @@ Axen - Inicio
 			'YUC', 'ZAC'
 		];
 		/* State Names */
-		var state_names = ['Aguascalientes', 'Baja California Norte', 'Baja California Sur', 'Campeche', 'Chihuahua', 'Chiapas', 'Coahuila', 'Colima', 'CDMX', 'Durango', 'Guerrero', 'Guanajuato', 'Hidalgo', 'Jalisco', 'Edo. Mexico', 'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca', 'Puebla', 'Queretaro', 'Quintana Roo', 'Sinaloa', 'San Luis Potosí', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas'];
-        var contacto = ['Mail: contacto@axen.com']
-        var tel = ['T: 4431XXXXXX']
+		var state_names = ['Aguascalientes', 'Baja California Norte', 'Baja California Sur', 'Campeche', 'Chihuahua',
+                        'Chiapas', 'Coahuila', 'Colima', 'CDMX', 'Durango', 
+                        'Guerrero', 'Guanajuato', 'Hidalgo', 'Jalisco', 'Edo. Mexico',
+                        'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca',
+                        'Puebla', 'Queretaro', 'Quintana Roo', 'Sinaloa', 'San Luis Potosí',
+                        'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 
+                        'Yucatán', 'Zacatecas'];
+        var contacto = ['Mail: contacto@axencapital.com']
+        var tel = ['Todavía no estamos aquí', 'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
+                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
+                    'Todavía no estamos aquí', 'León: Blvd. Campestre #802, Jardines del Moral, C.P. 37160', 'Todavía no estamos aquí', 'Guadalajara: Av. de las Américas #1930, Country Club, C.P. 44610', 'Todavía no estamos aquí',
+                    'Uruapan: Cananea #850 Int. 4 Fracc. Los Ángeles C.P. 60180, Morelia: Av. Camelinas #333 Col. Félix Ireta, C.P. 58070', 'Cuernavaca: Av. Díaz Ordaz #19 Col. Cantarranas C.P. 62448', 'Todavía no estamos aquí', 'Todavía no estamos aquí', 'Todavía no estamos aquí',
+                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
+                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí', 'Todavía no estamos aquí', 'Xalapa: Av. Orizaba #329, Fracc. Veracruz,C.P. 91020,',
+                    'Todavía no estamos aquí', 'Todavía no estamos aquí']
 		$(function () {
 			$('.map').maphilight({ fade: false });
 		});
@@ -38,7 +50,7 @@ Axen - Inicio
 				var id = $(this).attr('id');
 				var state = $.inArray(id, states);
 
-				$('#edo').html(state_names[state] + '<br><br>' + contacto[0] + '<br>' + tel[0]);
+				$('#edo').html(state_names[state] + '<br>' + contacto[0] + '<br>' + tel[state]);
 			});
 		});
 </script>

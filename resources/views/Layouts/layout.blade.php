@@ -111,13 +111,13 @@
                         <div>
                             <h3>Podemos ayudarte</h3>
                             <p>
-                                T. 800 4455 5566 667 76
+                                {{-- T. 800 4455 5566 667 76
                                 <br>
-                                T. 800 4455 5566 667 76
+                                T. 800 4455 5566 667 76 --}}
                                 <br>
-                                info@axencapital.com
-                                <br>
-                                ventas@axencapital.com
+                                contacto@axencapital.com
+                                {{-- <br>
+                                ventas@axencapital.com --}}
                             </p>
                         </div>
                         {{-- REDES SOCIALES --}}
