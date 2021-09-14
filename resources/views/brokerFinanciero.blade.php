@@ -35,7 +35,10 @@ Broker Financiero
                 </div>
 
                 <div class="uk-width-1-1 txt-descrip-product">
-                    Un bróker acerca a las personas a los mercados financieros de todo el mundo.
+                    Un bróker acerca a las personas a los mercados financieros de todo el mundo. Recuerda que se trata
+                    de una figura necesaria y obligatoria si tienes la intención de operar los mercados financieros. 
+                    Cada bróker se especializa en productos específicos y es importante encontrar uno que se ajuste a tus
+                    necesidades como inversionista. 
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">

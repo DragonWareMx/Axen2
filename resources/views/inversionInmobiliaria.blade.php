@@ -37,6 +37,11 @@ Forex
                     Forex es el mercado financiero más grande de todo el mundo, en el cual se intercambian todas 
                     las divisas. Los participantes del mercado compran y venden divisas a través de un bróker, 
                     y pueden tener acceso a aproximadamente más de 5 trillones de dólares al día.
+                    <br>
+                    Operar con Forex es esencialmente sencillo, compras una divisa y vendes otra simultaneamente, 
+                    aunque es difícil predecir el movimiento de los precios, ya que éste depende de diversos factores, 
+                    como todo mercado, Forex es influído por la ley de oferta y demanda, por ello es importante estudiar
+                    y asesorte con expertos antes de empezar a operar.     
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">

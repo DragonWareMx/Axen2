@@ -53,6 +53,10 @@ Route::get('/forex', function () {
     return view('inversionInmobiliaria');
 })->name('inversionInmobiliaria');
 
+Route::get('/libertad-financiera', function (){
+    return view('libertadFinanciera');
+})->name('libertadFin');
+
 Route::post('/sendMail', function (Request $request) {
     $request->validate([
         'nombre' => 'required|max:45',

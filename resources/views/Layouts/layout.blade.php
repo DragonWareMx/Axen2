@@ -38,11 +38,11 @@
                                 sel-target: .uk-navbar-container;
                                 cls-active: uk-navbar-sticky;
                                 cls-inactive: uk-navbar-transparent uk-light; top: 0"
-        style="@if(Route::current()->getName() == 'nosotros') background-color: #2E3E58 @endif">
+        style="@if(Route::current()->getName() == 'nosotros' || Route::current()->getName() == 'libertadFin') background-color: #2E3E58 @endif">
             {{-- LOGO --}}
             <div class="uk-navbar-left uk-container">
                 <a class="uk-navbar-item uk-logo" href={{route('inicio')}}>
-                    <img src="@if(Route::current()->getName() == 'nosotros'){{asset("/img/logos/axenblanco.png")}}@else {{asset("/img/logos/axennegro.png")}} @endif" class="uk-margin-top uk-margin-bottom" width="200"
+                    <img src="@if(Route::current()->getName() == 'nosotros' || Route::current()->getName() == 'libertadFin'){{asset("/img/logos/axenblanco.png")}}@else {{asset("/img/logos/axennegro.png")}} @endif" class="uk-margin-top uk-margin-bottom" width="200"
                         height="51" />
                 </a>
             </div>
@@ -51,13 +51,13 @@
             <div class="uk-navbar-right uk-container">
                 <ul class="uk-navbar-nav uk-visible@s">
                     <li class="uk-active">
-                        <a href={{route('nosotros')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos active @else menoItem @endif">Nosotros</a>
+                        <a href={{route('nosotros')}} class="@if(Route::current()->getName() == 'nosotros' )menoItemNos active @else menoItem @endif @if(Route::current()->getName() == 'libertadFin')menoItemNos @endif" >Nosotros</a>
                     </li>
                     <li>
-                        <a href="/inicio#temas" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
+                        <a href="/inicio#temas" class="@if(Route::current()->getName() == 'nosotros'|| Route::current()->getName() == 'libertadFin' )menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
                     </li>
                     <li>
-                        <a href="/inicio#contacto" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
+                        <a href="/inicio#contacto" class="@if(Route::current()->getName() == 'nosotros' || Route::current()->getName() == 'libertadFin' )menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
                     </li>
                 </ul>
                 <a href="#" class="uk-navbar-toggle uk-hidden@s menoItem" uk-navbar-toggle-icon

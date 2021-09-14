@@ -34,16 +34,15 @@ Fondo de inversión
                 </div>
 
                 <div class="uk-width-1-1 txt-descrip-product">
-                    Cuando ahorras tu dinero, sólo estás acumulando y no estás multiplicando tu capital, 
+                    Cuando ahorras, sólo estás acumulando y no estás multiplicando tu capital, 
                     al contrario, tu dinero está perdiendo valor por la inflación. En cambio, cuando inviertes
-                    pones tu dinero a trabajar obteniendo una ganancia a futuro.
+                    pones tu dinero a trabajar, con lo que obtendrás una ganancia a futuro.
                     <br> <br>
-                    Libertad financiera
-                    <br>
-                    La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte nunca 
-                    más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas de generar 
-                    ingresos, lo que te gestiona más tiempo para hacer lo que en realidad te gusta.
-                    “Disfruta de la vida, nosotros nos encargamos del resto”.
+                    Las inversiones y el tiempo son grandes aliados. Nunca es demasiado pronto para comenzar
+                    a invertir, entre más joven comiences, más rápido podrás empezar a ver los resultados de la 
+                    tan ansiada libertad financiera. No esperes a jubilarte, la mejor época para vivir es hoy. 
+                    Genera ganancias incluso mientras duermes y despiértate con la seguridad y la felicidad de 
+                    que los sueños pueden volverse reales.  
                 </div>
             </div>
             <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; target: .img-producto; delay: 400; repeat: true">

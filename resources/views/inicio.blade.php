@@ -71,7 +71,7 @@ Axen - Inicio
         </div>
         <div class='ini_subtitle1 uk-width-1-1' uk-scrollspy="cls: uk-animation-fade; delay: 200;repeat: true">trabaje
             mientras descansas</div>
-        <a href='/inicio#sobre-nosotros' class='ini_button1'>Más</a>
+        <a href='/libertad-financiera' class='ini_button1'>Más</a>
     </div>
 </div>
 
@@ -85,7 +85,7 @@ Axen - Inicio
         </div>
         <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una empresa dedicada a compartir una nueva cultura financiera, 
             que da la oportunidad de generar riqueza</div>
-        <a href='/nosotros' class='ini_button2'>Conoce más</a>
+        <a href='/nosotros' class='ini_button2'>Conócenos</a>
     </div>
     {{-- <img src={{asset('/img/inicio/graph.gif')}} class='ini_graph3'> --}}
 </div>
