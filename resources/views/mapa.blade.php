@@ -88,17 +88,27 @@
             <div class="uk-width-expand@m uk-flex uk-flex-center uk-flex-middle"
                 uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
                 <form action="/sendMail" method="post" class="uk-flex uk-flex-center uk-flex-middle">
+
                     @csrf
                     <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
                         <div class="text-contacto">Contacto</div>
-
+                        @if ($errors->any())
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li style="color: red">{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                        @endif
                         <div class="label-txta">Nombre:</div>
                         <textarea class="uk-text-area uk-margin-small-bottom taC" name="nombre" id="nombre" cols="30"
                             rows="10" required></textarea>
                         <div class="label-txta">Teléfono:</div>
                         <textarea class="uk-text-area uk-margin-small-bottom taC" name="tel" id="" cols="30" rows="10"
                             required></textarea>
-                        <div class="label-txta">Asunto:</div>
+                        <div class="label-txta">Correo electrónico:</div>
+                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="mail" id="mail" cols="30"
+                            rows="10" required></textarea>
+                        <div class="label-txta">¿En qué podemos ayudarte?:</div>
                         <textarea class="uk-text-area uk-margin-bottom taC" name="asunto" id="" cols="30" rows="10"
                             required></textarea>
 

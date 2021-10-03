@@ -53,11 +53,15 @@ Route::get('/forex', function () {
     return view('inversionInmobiliaria');
 })->name('inversionInmobiliaria');
 
+
+
+
 Route::post('/sendMail', function (Request $request) {
     $request->validate([
         'nombre' => 'required|max:45',
         'tel' => 'required|min:10|max:10|numeric',
         'asunto' => 'required|max:255',
+        'mail' => 'required|email'
     ]);
     Mail::to('joseagustinsolorzano@gmail.com')->send(new SendMailable($request));
     return redirect()->back();
