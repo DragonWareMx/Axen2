@@ -14,7 +14,7 @@
         Mensaje: {{$request->asunto}}
     </p>
     <p>Puedes contactarlo al teléfono: {{$request->tel}}</p>
+    <p>Y al correo: {{$request->mail}}</p>
 
-    
 </body>
 </html>

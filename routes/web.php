@@ -63,6 +63,6 @@ Route::post('/sendMail', function (Request $request) {
         'asunto' => 'required|max:255',
         'mail' => 'required|email'
     ]);
-    Mail::to('joseagustinsolorzano@gmail.com')->send(new SendMailable($request));
+    Mail::to('marketing@axencapital.com')->send(new SendMailable($request));
     return redirect()->back();
 })->name('mail');
