@@ -53,7 +53,9 @@ Route::get('/forex', function () {
     return view('inversionInmobiliaria');
 })->name('inversionInmobiliaria');
 
-
+Route::get('/aviso-de-privacidad', function () {
+    return view('politicaPrivacidad');
+})->name('privacidad');
 
 
 Route::post('/sendMail', function (Request $request) {

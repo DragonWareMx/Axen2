@@ -115,9 +115,9 @@
                         <button type="submit" class="btn-contacto uk-margin-small-bottom"
                             style="cursor:pointer">Enviar</button>
                         <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" style="width: 90%">
-                            {{-- <label class="politicas-txt"><input class="uk-checkbox check-or" type="checkbox">Acepto las
-                            Políticas de
-                            Privacidad</label> --}}
+                            <label class="politicas-txt"><input class="uk-checkbox check-or" type="checkbox">Acepto las
+                            <a href="{{route('privacidad')}}" target="_blank"> Políticas de
+                            Privacidad </a> </label>
                         </div>
                     </div>
                 </form>

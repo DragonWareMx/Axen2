@@ -97,7 +97,7 @@
     <footer id="page-footer" class="uk-margin-top">
         <div class="uk-section-default">
             <div class="uk-section uk-light uk-background-cover" style="background-image: url({{asset('/img/inicio/footer.svg')}}); background-color:#0071C2;">
-                
+
                 <div class="uk-container uk-padding-small">
                     <img src="{{asset("/img/logos/axenblanco.png")}}" class="footer_img uk-align-center"/>
                     <div class="uk-child-width-expand@s uk-text-center" uk-grid>
@@ -116,8 +116,8 @@
                                 T. 800 4455 5566 667 76 --}}
                                 <br>
                                 contacto@axencapital.com
-                                {{-- <br>
-                                ventas@axencapital.com --}}
+                                <br>
+                                <a href="{{route('privacidad')}}" target="_blank" rel="noopener noreferrer">Aviso de privacidad</a>
                             </p>
                         </div>
                         {{-- REDES SOCIALES --}}
