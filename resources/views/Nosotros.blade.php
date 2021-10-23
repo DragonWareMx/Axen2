@@ -15,16 +15,16 @@ Nosotros
 @endsection
 
 @section('header')
-    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top" 
+    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top"
     style="background-color:#2E3E58; margin-top:140px !important">
         <div class="uk-width-4-5@xl uk-margin-auto uk-margin-large-bottom uk-flex uk-flex-wrap uk-flex-middle">
             <div class="uk-width-1-2@m">
                 <div class="uk-width-5-6@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                     <div class="title-view uk-margin-small-bottom">¿Quiénes somos?</div>
                     <div class="text-content">
-                        Somos una empresa dedicada a compartir una nueva cultura financiera, 
-                        que da la oportunidad de generar riqueza. Fundada en 2017 para mejorar 
-                        la calidad de vida de las personas, trabajamos con pasión para lograr 
+                        Somos una empresa dedicada a compartir una nueva cultura financiera,
+                        que da la oportunidad de generar riqueza. Fundada en 2017 para mejorar
+                        la calidad de vida de las personas, trabajamos con pasión para lograr
                         nuestra visión: impactar positivamente el 1% de la población mundial y ayudarla
                         a cumplir sus sueños.
                     </div>
@@ -60,14 +60,14 @@ Nosotros
 
                     <div class="title-view uk-margin-small-bottom">Libertad financiera</div>
                     <div class="text-content">
-                        La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte 
-                        nunca más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas 
+                        La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte
+                        nunca más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas
                         de generar ingresos, lo que te gestiona más tiempo para hacer lo que en realidad te gusta.
                         “Disfruta de la vida, nosotros nos encargamos del resto”.
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 

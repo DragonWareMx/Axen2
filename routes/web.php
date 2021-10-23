@@ -57,6 +57,10 @@ Route::get('/aviso-de-privacidad', function () {
     return view('politicaPrivacidad');
 })->name('privacidad');
 
+Route::get('/developers', function () {
+    return view('developers');
+})->name('developers');
+
 
 Route::post('/sendMail', function (Request $request) {
     $request->validate([
