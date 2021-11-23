@@ -38,11 +38,12 @@
                                 sel-target: .uk-navbar-container;
                                 cls-active: uk-navbar-sticky;
                                 cls-inactive: uk-navbar-transparent uk-light; top: 0"
-        style="@if(Route::current()->getName() == 'nosotros') background-color: #2E3E58 @endif">
+            style="@if(Route::current()->getName() == 'nosotros') background-color: #2E3E58 @endif">
             {{-- LOGO --}}
             <div class="uk-navbar-left uk-container">
                 <a class="uk-navbar-item uk-logo" href={{route('inicio')}}>
-                    <img src="@if(Route::current()->getName() == 'nosotros'){{asset("/img/logos/axenblanco.png")}}@else {{asset("/img/logos/axennegro.png")}} @endif" class="uk-margin-top uk-margin-bottom" width="200"
+                    <img src="@if(Route::current()->getName() == 'nosotros'){{asset(" /img/logos/axenblanco.png")}}@else
+                        {{asset("/img/logos/axennegro.png")}} @endif" class="uk-margin-top uk-margin-bottom" width="200"
                         height="51" />
                 </a>
             </div>
@@ -51,13 +52,16 @@
             <div class="uk-navbar-right uk-container">
                 <ul class="uk-navbar-nav uk-visible@s">
                     <li class="uk-active">
-                        <a href={{route('nosotros')}} class="@if(Route::current()->getName() == 'nosotros')menoItemNos active @else menoItem @endif">Nosotros</a>
+                        <a href={{route('nosotros')}}
+                            class="@if(Route::current()->getName() == 'nosotros')menoItemNos active @else menoItem @endif">Nosotros</a>
                     </li>
                     <li>
-                        <a href="/inicio#temas" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
+                        <a href="/inicio#temas"
+                            class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'productos') active @endif">Temas</a>
                     </li>
                     <li>
-                        <a href="/inicio#contacto" class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
+                        <a href="/inicio#contacto"
+                            class="@if(Route::current()->getName() == 'nosotros')menoItemNos @else menoItem @endif @if(Route::current()->getName() == 'contacto') active @endif">Contacto</a>
                     </li>
                 </ul>
                 <a href="#" class="uk-navbar-toggle uk-hidden@s menoItem" uk-navbar-toggle-icon
@@ -96,16 +100,20 @@
     {{-- FOOTER --}}
     <footer id="page-footer" class="uk-margin-top">
         <div class="uk-section-default">
-            <div class="uk-section uk-light uk-background-cover" style="background-image: url({{asset('/img/inicio/footer.svg')}}); background-color:#0071C2;">
+            <div class="uk-section uk-light uk-background-cover"
+                style="background-image: url({{asset('/img/inicio/footer.svg')}}); background-color:#0071C2;">
 
                 <div class="uk-container uk-padding-small">
-                    <img src="{{asset("/img/logos/axenblanco.png")}}" class="footer_img uk-align-center"/>
+                    <img src="{{asset(" /img/logos/axenblanco.png")}}" class="footer_img uk-align-center" />
                     <div class="uk-child-width-expand@s uk-text-center" uk-grid>
                         {{-- MENU --}}
                         <div uk-flex uk-flex-column>
-                            <a class='footer_menu @if(Route::current()->getName() == 'nosotros') footer_menu_active @endif' href={{route('nosotros')}}>Nosotros</a>
-                            <a class='footer_menu @if(Route::current()->getName() == 'productos') footer_menu_active @endif' href="/inicio#temas">Temas</a>
-                            <a class='footer_menu @if(Route::current()->getName() == 'contacto') footer_menu_active @endif' href="/inicio#contacto">Contacto</a>
+                            <a class='footer_menu @if(Route::current()->getName() == ' nosotros') footer_menu_active
+                                @endif' href={{route('nosotros')}}>Nosotros</a>
+                            <a class='footer_menu @if(Route::current()->getName() == ' productos') footer_menu_active
+                                @endif' href="/inicio#temas">Temas</a>
+                            <a class='footer_menu @if(Route::current()->getName() == ' contacto') footer_menu_active
+                                @endif' href="/inicio#contacto">Contacto</a>
                         </div>
                         {{-- PODEMOS AYUDARTE --}}
                         <div>
@@ -117,29 +125,37 @@
                                 <br>
                                 contacto@axencapital.com
                                 <br>
-                                <a href="{{route('privacidad')}}" target="_blank" rel="noopener noreferrer">Aviso de privacidad</a>
+                                <a href="{{route('privacidad')}}" target="_blank" rel="noopener noreferrer">Aviso de
+                                    privacidad</a>
                             </p>
                         </div>
                         {{-- REDES SOCIALES --}}
                         <div>
                             <div class="uk-flex uk-flex-wrap uk-flex-wrap-around">
                                 <div class="uk-width-1-2">
-                                    <a href="https://www.facebook.com/AxenCapital" target="_blank" class="footer_icon" uk-icon="icon: facebook; ratio: 3;"></a>
+                                    <a href="https://www.facebook.com/AxenCapital" target="_blank" class="footer_icon"
+                                        uk-icon="icon: facebook; ratio: 3;"></a>
                                 </div>
                                 <div class="uk-width-1-2">
-                                    <a href="" target="_blank" class="footer_icon" uk-icon="icon: twitter; ratio: 3;"></a>
+                                    <a href="" target="_blank" class="footer_icon"
+                                        uk-icon="icon: twitter; ratio: 3;"></a>
                                 </div>
                                 <div class="uk-width-1-2" style="margin-top: 20px">
-                                    <a href="https://www.instagram.com/axencapital" target="_blank" class="footer_icon" uk-icon="icon: instagram; ratio: 3;"></a>
+                                    <a href="https://www.instagram.com/axencapital" target="_blank" class="footer_icon"
+                                        uk-icon="icon: instagram; ratio: 3;"></a>
                                 </div>
                                 <div class="uk-width-1-2" style="margin-top: 20px">
-                                    <a href="" target="_blank" class="footer_icon" uk-icon="icon: linkedin; ratio: 3;"></a>
+                                    <a href="" target="_blank" class="footer_icon"
+                                        uk-icon="icon: linkedin; ratio: 3;"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div style="position: relative; bottom: 0; margin-bottom: -40px; margin-left: 50px; font-size: 14px">
+                    Desarrollado por <a href="https://dragonware.com.mx/" target="_blank">Dragonware <img
+                            src="/img/logos/dragonware.png" height="14px" style="height: 14px" /></a>
+                </div>
             </div>
         </div>
     </footer>
