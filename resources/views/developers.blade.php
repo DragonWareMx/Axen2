@@ -25,7 +25,8 @@ Developers
                         ¿Quieres saber quiénes somos, qué hacemos y cómo podemos ayudarte a obtener la libertad financiera?
                         Si llegaste hasta aquí ya diste el primer paso, revisa la información que te compartimos y si tienes
                         dudas o quieres saber más al respecto, contacta con tu developer. Él está para ayudarte a lograr tus objetivos.
-                        Descarga la presentación <a href={{asset('/documentos/presentaciongeneral.pdf')}} target="_blank" style="color: black">AQUÍ</a>.
+                        Descarga la presentación <a href={{asset('/documentos/presentaciongeneral.pdf')}} target="_blank" style="font-weight:bold">AQUÍ</a>.
+                        <br>
                     </div>
                 </div>
             </div>
