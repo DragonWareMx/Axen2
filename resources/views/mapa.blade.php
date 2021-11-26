@@ -95,7 +95,10 @@
                         @if ($errors->any())
                         <ul>
                             @foreach ($errors->all() as $error)
-                                <li style="color: red">{{ $error }}</li>
+                            <div class="uk-alert-warning" uk-alert>
+                                <a class="uk-alert-close" uk-close style="color:black"></a>
+                                <p>{{ $error }}</p>
+                            </div>
                             @endforeach
                         </ul>
                         @endif

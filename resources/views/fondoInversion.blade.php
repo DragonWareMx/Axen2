@@ -16,13 +16,13 @@ Fondo de inversión
 
 @section('header')
     <img src={{asset('/img/productos/onda.png')}} class="img-onda" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
-    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top uk-padding-remove-bottom" 
+    <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top uk-padding-remove-bottom"
     style="margin-top:140px !important">
-        
+
         <div class="uk-width-1-1 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top uk-flex uk-flex-wrap uk-margin-medium-bottom container-info-product">
             <div class="uk-width-1-2@m">
                 <div class="uk-width-1-1 txt-title-product uk-margin-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">¿POR QUÉ INVERTIR?</div>
-                
+
                 <div class="uk-width-1-1 uk-margin-medium-bottom uk-flex uk-flex-middle" uk-grid>
                     <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <img src={{asset('/img/productos/recurso.svg')}} class="img-icon-product">
@@ -34,14 +34,14 @@ Fondo de inversión
                 </div>
 
                 <div class="uk-width-1-1 txt-descrip-product">
-                    Cuando ahorras tu dinero, sólo estás acumulando y no estás multiplicando tu capital, 
+                    Cuando ahorras tu dinero, sólo estás acumulando y no estás multiplicando tu capital,
                     al contrario, tu dinero está perdiendo valor por la inflación. En cambio, cuando inviertes
                     pones tu dinero a trabajar obteniendo una ganancia a futuro.
                     <br> <br>
                     Libertad financiera
                     <br>
-                    La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte nunca 
-                    más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas de generar 
+                    La libertad financiera te permite disfrutar plenamente de la vida para no preocuparte nunca
+                    más por el dinero. Alcanzarla depende de darnos cuenta que existen formas distintas de generar
                     ingresos, lo que te gestiona más tiempo para hacer lo que en realidad te gusta.
                     “Disfruta de la vida, nosotros nos encargamos del resto”.
                 </div>
@@ -51,6 +51,6 @@ Fondo de inversión
             </div>
         </div>
     </div>
-    
+
     <img src={{asset('/img/productos/onda5.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
 @endsection

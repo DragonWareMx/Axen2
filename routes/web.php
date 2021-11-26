@@ -62,6 +62,16 @@ Route::get('/developers', function () {
 })->name('developers');
 
 
+//registro
+Route::get('/registro-visita', function () {
+    return view('registro');
+})->name('registro');
+
+Route::post('/registro-visita', [App\Http\Controllers\VisitorController::class, 'store'])->name('visita.store');
+
+
+
+
 Route::post('/sendMail', function (Request $request) {
     $request->validate([
         'nombre' => 'required|max:45',
