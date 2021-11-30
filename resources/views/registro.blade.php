@@ -35,13 +35,13 @@ Bienvenido a Axen
         <div class="uk-width-1-1 txt-title-product uk-margin-bottom" style="text-align: center" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
             Bienvenido
         </div>
-        <div>
-            <div class="uk-width-expand@m uk-flex uk-flex-center uk-flex-middle"
+
+            <div class=""
             uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
             <form action="/registro-visita" method="post" class="uk-flex uk-flex-center uk-flex-middle">
 
                 @csrf
-                <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+                <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-padding-large">
                     <div class="text-contacto">Nos gustaría hacerte unas preguntas</div>
                     @if ($errors->any())
                     <ul>
@@ -66,19 +66,19 @@ Bienvenido a Axen
                     <textarea class="uk-text-area uk-margin-bottom taC" name="referencia" id="" cols="30" rows="10"
                         ></textarea>
 
-                    <div class="uk-margin-bottom uk-width-1-1" style="text-align: center">
-                        <div class="label-txta uk-flex uk-flex-center uk-flex-middle">¿Has leído alguno de estos libros?, selecciónalos:</div>
+                    <div class="uk-margin-bottom uk-width-1-1 uk-margin-large-left">
+                        <div class="label-txta uk-flex uk-flex-middle">¿Has leído alguno de estos libros?, selecciónalos:</div>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="curso_solvencia"> El curso de la solvencia</label>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="dinero_espiritual"> Dinero Espiritual</label>
                     </div>
 
-                    <div class="uk-margin-bottom uk-width-1-1" style="text-align: center">
+                    <div class="uk-margin-bottom uk-width-1-1 uk-margin-large-left">
                         <div class="label-txta">¿Has asistido a alguno de estos eventos?, selecciónalos:</div>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="avatar">Avatar Financiero</label>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="avatrading">Avatrading</label>
                     </div>
 
-                    <div class="uk-margin-bottom uk-width-1-1" style="text-align: center">
+                    <div class="uk-margin-bottom uk-width-1-1 uk-margin-large-left">
                         <div class="label-txta">¿Te gustaría recibir información sobre cómo obtener la libertad financiera?</div>
                         <label class='politicas-txt'><input class="uk-radio uk-margin-left check-or" type="radio" name="informacion" value="true" checked>Sí, claro</label>
                         <label class='politicas-txt'><input class="uk-radio uk-margin-left check-or" type="radio" name="informacion" value="false"> No por el momento</label>
@@ -95,7 +95,7 @@ Bienvenido a Axen
                 </div>
             </form>
         </div>
-        </div>
+
     </div>
 
     <img src={{asset('/img/productos/onda5.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
