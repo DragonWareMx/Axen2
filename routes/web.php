@@ -57,6 +57,11 @@ Route::get('/aviso-de-privacidad', function () {
     return view('politicaPrivacidad');
 })->name('privacidad');
 
+Route::get('/legal', function () {
+    return view('legal');
+})->name('legal');
+
+
 Route::get('/developers', function () {
     return view('developers');
 })->name('developers');

@@ -125,8 +125,13 @@
                                 <br>
                                 contacto@axencapital.com
                                 <br>
-                                <a href="{{route('privacidad')}}" target="_blank" rel="noopener noreferrer">Aviso de
+                                <a href="{{route('privacidad')}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none">Aviso de
                                     privacidad</a>
+                                <br>
+                                <a href="documentos/pld.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none">Políticas de Prevención de Lavado de Dinero</a>
+                                <br>
+                                <a href="{{route('legal')}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none">Legal</a>
+
                             </p>
                         </div>
                         {{-- REDES SOCIALES --}}

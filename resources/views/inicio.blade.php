@@ -28,18 +28,18 @@ Axen - Inicio
 		];
 		/* State Names */
 		var state_names = ['Aguascalientes', 'Baja California Norte', 'Baja California Sur', 'Campeche', 'Chihuahua',
-                        'Chiapas', 'Coahuila', 'Colima', 'CDMX', 'Durango', 
+                        'Chiapas', 'Coahuila', 'Colima', 'CDMX', 'Durango',
                         'Guerrero', 'Guanajuato', 'Hidalgo', 'Jalisco', 'Edo. Mexico',
                         'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca',
                         'Puebla', 'Queretaro', 'Quintana Roo', 'Sinaloa', 'San Luis Potosí',
-                        'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 
+                        'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz',
                         'Yucatán', 'Zacatecas'];
         var contacto = ['Mail: contacto@axencapital.com']
         var tel = ['Todavía no estamos aquí', 'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
-                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
+                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Av. Paseo de la Reforma #26 Col. Juárez, Del. Cuauhtémoc C.P. 06600','Todavía no estamos aquí',
                     'Todavía no estamos aquí', 'León: Blvd. Campestre #802, Jardines del Moral, C.P. 37160', 'Todavía no estamos aquí', 'Guadalajara: Av. de las Américas #1930, Country Club, C.P. 44610', 'Todavía no estamos aquí',
                     'Uruapan: Cananea #850 Int. 4 Fracc. Los Ángeles C.P. 60180, Morelia: Av. Camelinas #333 Col. Félix Ireta, C.P. 58070', 'Cuernavaca: Av. Díaz Ordaz #19 Col. Cantarranas C.P. 62448', 'Todavía no estamos aquí', 'Todavía no estamos aquí', 'Todavía no estamos aquí',
-                    'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
+                    'Puebla: Av. 39 Pte. 3515, Col. Las Ánimas, C.P. 72400. El Triángulo Local L 1B','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí',
                     'Todavía no estamos aquí','Todavía no estamos aquí','Todavía no estamos aquí', 'Todavía no estamos aquí', 'Xalapa: Av. Orizaba #329, Fracc. Veracruz,C.P. 91020,',
                     'Todavía no estamos aquí', 'Todavía no estamos aquí']
 		$(function () {
@@ -83,7 +83,7 @@ Axen - Inicio
             uk-scrollspy="cls: uk-animation-fade;repeat: true">
         <div class='ini_title2 uk-width-1-1' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Sobre nosotros
         </div>
-        <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una empresa dedicada a compartir una nueva cultura financiera, 
+        <div class='ini_subtitle2' uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">Somos una empresa dedicada a compartir una nueva cultura financiera,
             que da la oportunidad de generar riqueza</div>
         <a href='/nosotros' class='ini_button2'>Conoce más</a>
     </div>
