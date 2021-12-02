@@ -16,7 +16,7 @@ Bienvenido a Axen
 @endsection
 
 @section('header')
-    <img src={{asset('/img/productos/onda.png')}} class="img-onda" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+    {{-- <img src={{asset('/img/productos/onda.png')}} class="img-onda" width="100%" uk-scrollspy="cls: uk-animation-slide-top; repeat: false"> --}}
     <div class="uk-container uk-container-large uk-width-1-1 uk-margin-auto uk-padding uk-padding-remove-top uk-padding-remove-bottom" style="margin-top:140px !important">
         @if (session('success'))
         <div class="uk-alert-success" uk-alert>
@@ -66,7 +66,20 @@ Bienvenido a Axen
                     <textarea class="uk-text-area uk-margin-bottom taC" name="referencia" id="" cols="30" rows="10"
                         ></textarea>
 
-                    <div class="uk-margin-bottom uk-width-1-1 uk-margin-large-left">
+                    <div class="label-txta">¿En qué sucursal nos visitas?:</div>
+                    <select class="uk-select uk-margin-bottom taC" name="sucursal" cols="30" rows="10" required>
+                        <option value="" disabled selected>Ciudad</option>
+                        <option>Boca del Río, Ver.</option>
+                        <option>Ciudad de México</option>
+                        <option>Cuernavaca, Mor.</option>
+                        <option>Guadalajara, Jal.</option>
+                        <option>Leon, Gto.</option>
+                        <option>Morelia, Mich.</option>
+                        <option>Uruapan, Mich.</option>
+                        <option>Xalapa, Ver.</option>
+                    </select>
+
+                        <div class="uk-margin-bottom uk-width-1-1 uk-margin-large-left">
                         <div class="label-txta uk-flex uk-flex-middle">¿Has leído alguno de estos libros?, selecciónalos:</div>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="curso_solvencia"> El curso de la solvencia</label>
                         <label class='politicas-txt'><input class="uk-checkbox uk-margin-left check-or" type="checkbox" name="dinero_espiritual"> Dinero Espiritual</label>
@@ -85,6 +98,7 @@ Bienvenido a Axen
                     </div>
 
 
+
                     <button type="submit" class="btn-contacto uk-margin-small-bottom"
                         style="cursor:pointer">Enviar</button>
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" style="width: 90%">
@@ -98,5 +112,5 @@ Bienvenido a Axen
 
     </div>
 
-    <img src={{asset('/img/productos/onda5.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+    {{-- <img src={{asset('/img/productos/onda5.png')}} class="img-onda-abajo" uk-scrollspy="cls: uk-animation-slide-left; repeat: false"> --}}
 @endsection

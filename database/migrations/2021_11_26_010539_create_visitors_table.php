@@ -25,6 +25,7 @@ class CreateVisitorsTable extends Migration
             $table->boolean('avatar')->default(false);
             $table->boolean('avatrading')->default(false);
             $table->boolean('boletin_info')->default(true);
+            $table->string('sucursal',100);
 
         });
     }

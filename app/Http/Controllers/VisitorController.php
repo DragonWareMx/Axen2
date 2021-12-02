@@ -14,12 +14,12 @@ class VisitorController extends Controller
     public function store(Request $request)
     {
 
-
         $validated = $request->validate([
             'nombre' => ['required','max:100', 'regex:/^[A-Za-z0-9À-ÖØ-öø-ÿ_! \"#$%&\'()*+,\-.\\:\/;=?@^_]+$/'],
             'email' => 'required|email|unique:visitors',
             'telefono'=> ['nullable','max:15','regex:/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\.0-9]*$/i','min:10'],
             'referencia' => ['nullable','max:100', 'regex:/^[A-Za-z0-9À-ÖØ-öø-ÿ_! \"#$%&\'()*+,\-.\\:\/;=?@^_]+$/'],
+            'sucursal' => ['required','max:100', 'regex:/^[A-Za-z0-9À-ÖØ-öø-ÿ_! \"#$%&\'()*+,\-.\\:\/;=?@^_]+$/'],
         ]);
 
         DB::beginTransaction();
@@ -28,6 +28,7 @@ class VisitorController extends Controller
             $visitor->nombre = $request->nombre;
             $visitor->email = $request->email;
             $visitor->telefono = $request->telefono;
+            $visitor->sucursal = $request->sucursal;
 
             if($request->referencia)
             $visitor->referencia = $request->referencia;
