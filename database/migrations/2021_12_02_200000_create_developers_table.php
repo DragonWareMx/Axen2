@@ -16,6 +16,12 @@ class CreateDevelopersTable extends Migration
         Schema::create('developers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('office_id');
+            $table->string('nombre',100);
+            $table->string('telefono',20)->unique();
+            $table->string('email',100)->unique();
+
+            $table->foreign('office_id')->references('id')->on('offices');
         });
     }
 

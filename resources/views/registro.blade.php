@@ -41,6 +41,7 @@ Bienvenido a Axen
             <form action="/registro-visita" method="post" class="uk-flex uk-flex-center uk-flex-middle">
 
                 @csrf
+
                 <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-padding-large">
                     <div class="text-contacto">Nos gustaría hacerte unas preguntas</div>
                     @if ($errors->any())
