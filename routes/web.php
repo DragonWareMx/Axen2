@@ -74,6 +74,9 @@ Route::get('/registro-visita', function () {
 
 Route::post('/registro-visita', [App\Http\Controllers\VisitorController::class, 'store'])->name('visita.store');
 
+//REGISTRO DE CITAS
+Route::get('/cita-oficina', [App\Http\Controllers\DateController::class, 'oficinas'])->name('cita.oficina');
+Route::post('/cita-oficina-dev', [App\Http\Controllers\DateController::class, 'developers'])->name('cita.developer');
 
 
 
