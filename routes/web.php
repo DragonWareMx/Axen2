@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Mail\SendMailable;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 /*
@@ -75,8 +76,12 @@ Route::get('/registro-visita', function () {
 Route::post('/registro-visita', [App\Http\Controllers\VisitorController::class, 'store'])->name('visita.store');
 
 //REGISTRO DE CITAS
-Route::get('/cita-oficina', [App\Http\Controllers\DateController::class, 'oficinas'])->name('cita.oficina');
-Route::post('/cita-oficina-dev', [App\Http\Controllers\DateController::class, 'developers'])->name('cita.developer');
+Route::get('/cita-oficina', [App\Http\Controllers\DateController::class, 'oficinas'])->name('cita.oficina'); //inicio de registro cita
+Route::get('/registro-dev', [App\Http\Controllers\DateController::class, 'createDev'])->name('create.developer'); //para registrar developer
+Route::post('/cita-oficina-dev', [App\Http\Controllers\DateController::class, 'developers'])->name('cita.developer'); //segunda de registro cita
+Route::post('/cita-registro-dev', [App\Http\Controllers\DateController::class, 'storeDev'])->name('cita.nuevodev'); //guarda nuevo developer
+Route::post('/cita-fecha', [App\Http\Controllers\DateController::class, 'fechas'])->name('cita.fechas');//tercera de registro cita
+Route::post('/cita-store', [App\Http\Controllers\DateController::class, 'storeDate'])->name('cita.store');//se registra la cita en bd
 
 
 
@@ -90,3 +95,7 @@ Route::post('/sendMail', function (Request $request) {
     Mail::to('marketing@axencapital.com')->send(new SendMailable($request));
     return redirect()->back();
 })->name('mail');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

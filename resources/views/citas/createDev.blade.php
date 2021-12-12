@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-Bienvenido, developer
+Regístrate
 @endsection
 
 @section('head')
@@ -31,11 +31,10 @@ Bienvenido, developer
         @endif
 
         <div class="uk-width-1-1 txt-title-product uk-margin-bottom" style="text-align: center" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-            ¿Quién eres?
+            ¿Eres devéloper?
         </div>
-             {{-- FORM para avanzar seleccionando un developer --}}
-            <form id="form_developer" action="/cita-fecha" method="post" class="uk-flex uk-flex-center uk-flex-middle">
-                @csrf
+            <form id="registro_dev" action="/cita-registro-dev" method="post" class="uk-flex uk-flex-center uk-flex-middle">
+            @csrf
                 <div class="card-email uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-padding-large">
 
                     @if ($errors->any())
@@ -48,26 +47,25 @@ Bienvenido, developer
                         @endforeach
                     </ul>
                     @endif
-                        <div class="label-txta">Elige tu nombre en la lista:</div>
-                        <select class="uk-select uk-margin-bottom taC" name="developer" cols="30" rows="10" required>
-                            <option value="" disabled selected>Developer</option>
-                            @foreach ($developers as $developer)
-                                <option value={{$developer->id}}>{{$developer->nombre}}</option>
+
+                        <div class="label-txta">Nombre completo:</div>
+                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="nombre" id="nombre" cols="30"
+                            rows="10" required></textarea>
+                        <div class="label-txta">Teléfono:</div>
+                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="telefono" id="" cols="30" rows="10"
+                            required></textarea>
+                        <div class="label-txta">Correo electrónico:</div>
+                        <textarea class="uk-text-area uk-margin-small-bottom taC" name="email" id="mail" cols="30"
+                            rows="10" required></textarea>
+                        <div class="label-txta">Elige tu sucursal:</div>
+                        <select class="uk-select uk-margin-bottom taC" name="sucursal" cols="30" rows="10" required>
+                            <option value="" disabled selected>Ciudad</option>
+                            @foreach ($oficinas as $oficina)
+                                <option value={{$oficina->id}}>{{$oficina->ciudad}}
                             @endforeach
                         </select>
-
-                        <div class="label-txta" style="margin-bottom: 10px">Si no apareces en la lista, regístrate <a href="/registro-dev" style="text-decoration: none; color:black;" >aquí.</a></div>
-
-                        <div class="label-txta">¿Qué servicio requieres?:</div>
-                        <select class="uk-select uk-margin-bottom taC" name="servicio" cols="30" rows="10" required>
-                            <option value="Rendimientos" >Pago de rendimientos</option>
-                            <option value="Contrato" >Firma de contrato</option>
-                            <option value="Cuerpos en el local" >Cuerpos en el local</option>
-                            <option value="Entrega efectivo" >Entrega de efectivo</option>
-                        </select>
-
                         <button type="submit" class="btn-contacto uk-margin-small-bottom"
-                        style="cursor:pointer">Siguiente</button>
+                            style="cursor:pointer">Registrar</button>
                 </div>
             </form>
     </div>
