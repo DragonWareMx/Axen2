@@ -53,6 +53,10 @@ class OfficeSeeder extends Seeder
             'ciudad' => 'Ciudad de México',
             'direccion' => 'dir',
         ]);
+        DB::table('offices')->insert([
+            'ciudad' => 'Toluca, EdoMex',
+            'direccion' => 'dir',
+        ]);
 
 
     }

@@ -9,6 +9,7 @@ use App\Models\Office;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class DateController extends Controller
 {
@@ -27,6 +28,26 @@ class DateController extends Controller
         return view('citas.createDev', ['oficinas'=>$oficinas]);
     }
 
+    public function show(){
+
+        $dates = Date::where('office_id', Auth::user()->office_id)
+                ->whereDate('fecha','>=', Carbon::now())
+                ->get();
+
+        $old = false;
+        return view('citas.show', ['citas'=>$dates, 'old' =>$old]);
+    }
+
+    public function showOld(){
+
+        $dates = Date::where('office_id', Auth::user()->office_id)
+                ->whereDate('fecha','<', Carbon::now())
+                ->get();
+
+        $old = true;
+        return view('citas.show', ['citas'=>$dates, 'old' =>$old]);
+    }
+
     public function developers(Request $request){
 
         $developers = Developer::where('office_id', $request->sucursal)->get();
@@ -39,13 +60,30 @@ class DateController extends Controller
         $developer_id = $request->developer;
         $developer = Developer::find($developer_id);
         $servicio = $request->servicio;
-        $citas = Date::where('office_id', $developer->office_id)
-                ->whereDate('fecha','>=', Carbon::now())
-                ->get();
+
 
         session(['developer'=> $developer->id, 'servicio'=> $servicio, 'oficina'=>$developer->office_id]);
 
-        return view('citas.fechas', ['developer'=>$developer_id, 'citas'=>$citas]);
+        return view('citas.fechas', ['developer'=>$developer_id]);
+    }
+
+    public function horas(Request $request){
+
+       if($request->fecha <= Carbon::today())
+            return Redirect::route('cita.oficina')->with('error','Elige una fecha a partir de mañana');
+
+
+        $citas = Date::where('office_id', session()->get('oficina'))
+                ->whereDate('fecha', $request->fecha)
+                ->get();
+
+        session(['fecha'=> $request->fecha]);
+
+        if(isset($citas[0])){
+            return view('citas.horas', ['citas'=>$citas]);
+        }
+        else
+        return view('citas.horas');
     }
 
     public function storeDev(Request $request){
@@ -79,7 +117,6 @@ class DateController extends Controller
     public function storeDate(Request $request){
 
         $validated = $request->validate([
-            'fecha' => 'required|date|after:today',
             'hora' => 'required',
         ]);
 
@@ -92,7 +129,7 @@ class DateController extends Controller
 
             //verificamos que esta hora y fecha no existan
             if (Date::where([
-                ['fecha', '=', $request->fecha],
+                ['fecha', '=', session()->get('fecha')],
                 ['hora', '=', $request->hora],
                 ['office_id','=', session()->get('oficina')]
                 ])
@@ -102,14 +139,14 @@ class DateController extends Controller
                 }
 
             //Si hay más citas en ese día, verificamos que la duración no choque
-            if (Date::where([['fecha', '=', $request->fecha], ['office_id','=', session()->get('oficina')]])->first()){
+            if (Date::where([['fecha', '=', session()->get('fecha')], ['office_id','=', session()->get('oficina')]])->first()){
 
                 if (session()->get('servicio') == 'Cuerpos en el local'){
 
                     $horaF = date ('H:i:s', strtotime ( '+30 minute' , strtotime ($request->hora) ));
 
                     if (Date::where([
-                        ['fecha', '=', $request->fecha],
+                        ['fecha', '=', session()->get('fecha')],
                         ['hora', '=', $horaF],
                         ['office_id','=', session()->get('oficina')]
                         ])
@@ -119,7 +156,7 @@ class DateController extends Controller
                 }
             }
 
-            $cita->fecha = $request->fecha;
+            $cita->fecha = session()->get('fecha');
             $cita->hora = $request->hora;
 
 
@@ -138,4 +175,12 @@ class DateController extends Controller
         }
     }
 
+    public function createAdmin(){
+
+
+    }
+
+    public function storeDateAdmin(Request $request){
+
+    }
 }

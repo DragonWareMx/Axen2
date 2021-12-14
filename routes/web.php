@@ -81,9 +81,16 @@ Route::get('/registro-dev', [App\Http\Controllers\DateController::class, 'create
 Route::post('/cita-oficina-dev', [App\Http\Controllers\DateController::class, 'developers'])->name('cita.developer'); //segunda de registro cita
 Route::post('/cita-registro-dev', [App\Http\Controllers\DateController::class, 'storeDev'])->name('cita.nuevodev'); //guarda nuevo developer
 Route::post('/cita-fecha', [App\Http\Controllers\DateController::class, 'fechas'])->name('cita.fechas');//tercera de registro cita
+Route::post('/cita-hora', [App\Http\Controllers\DateController::class, 'horas'])->name('cita.horas');//tercera de registro cita
 Route::post('/cita-store', [App\Http\Controllers\DateController::class, 'storeDate'])->name('cita.store');//se registra la cita en bd
 
-
+//ADMIN
+//REVISIÓN CITAS
+Route::get('/citas', [App\Http\Controllers\DateController::class, 'show'])->name('citas.show')->middleware('auth'); //inicio de registro cita
+Route::get('/citas-previas', [App\Http\Controllers\DateController::class, 'showOld'])->name('citas.old')->middleware('auth'); //inicio de registro cita
+//CREACIÓN CITA-ADMIN
+Route::get('/citas-admin', [App\Http\Controllers\DateController::class, 'createAdmin'])->name('citas.create')->middleware('auth'); //inicio de registro cita
+Route::post('/cita-store-admin', [App\Http\Controllers\DateController::class, 'storeDateAdmin'])->name('cita.store.admin');//se registra la cita en bd
 
 Route::post('/sendMail', function (Request $request) {
     $request->validate([
